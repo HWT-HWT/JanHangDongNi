@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "贷款",
-  "usingComponents": {}
+  "usingComponents": {
+    "navbar-title": "../../components/NavbarTitle"
+  }
 }

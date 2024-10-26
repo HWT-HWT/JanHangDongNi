@@ -1,1 +1,1 @@
-<view> 财富 </view>
+<view><navbar-title u-s="{{['d']}}" u-i="e9f1c6c4-0" bind:__l="__l"> 财富 </navbar-title></view>

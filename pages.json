@@ -3,9 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页",
-				"navigationStyle": "custom"
-				
+				"navigationBarTitleText": "首页"
 			}
 		},
 		{
@@ -41,8 +39,8 @@
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#5d87e4",
-		"backgroundColor": "#ccc"
-		
+		"backgroundColor": "#ccc",
+		"navigationStyle": "custom"
 	},
 	"uniIdRouter": {},
 	"tabBar": {
@@ -51,30 +49,36 @@
 		"list": [
 			{
 				"text": "首页",
-				"pagePath": "pages/index/index"
+				"pagePath": "pages/index/index",
+				"iconPath": "./static/ioc/home.png",
+				"selectedIconPath": "./static/ioc/home_active.png"
 			},
 			{
 				"text": "贷款",
 				"pagePath": "pages/loan/loan",
-				"iconPath": "./static/moeny_a.png",
-				"selectedIconPath": "./static/money.png"
+				"iconPath": "./static/ioc/loan.png",
+				"selectedIconPath": "./static/ioc/loan_avtive.png"
 			},
 			{
 				"text": "财富",
-				"pagePath": "pages/wealth/wealth"
+				"pagePath": "pages/wealth/wealth",
+				"iconPath": "./static/ioc/wealth.png",
+				"selectedIconPath": "./static/ioc/wealth_active.png"
 				
 			},
 			{
 				"text": "服务",
-				"pagePath": "pages/service/service"
+				"pagePath": "pages/service/service",
+				"iconPath": "./static/ioc/service.png",
+				"selectedIconPath": "./static/ioc/service_avtive.png"
 				
 			},
 			{
 				"text": "我的",
-				"pagePath": "pages/my/my"
-				
+				"pagePath": "pages/my/my",
+				"iconPath": "./static/ioc/my.png",
+				"selectedIconPath": "./static/ioc/my_active.png"
 			}
-			
 		]
 	}
 }

@@ -1,1 +1,1 @@
-<view> 服务 </view>
+<view><navbar-title u-s="{{['d']}}" u-i="f18c942c-0" bind:__l="__l"> 服务 </navbar-title></view>

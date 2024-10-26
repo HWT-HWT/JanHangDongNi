@@ -1,0 +1,1 @@
+<view><view class="navbar-title"><view class="occupy"></view><text class="text-title"><slot></slot></text></view></view>

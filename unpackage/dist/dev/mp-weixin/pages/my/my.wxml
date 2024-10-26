@@ -1,1 +1,1 @@
-<view> 我的 </view>
+<view><navbar-title u-s="{{['d']}}" u-i="510ee03e-0" bind:__l="__l"> 我的 </navbar-title></view>
