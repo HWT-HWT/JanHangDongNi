@@ -7,10 +7,10 @@
     "pages/my/my"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#5d87e4",
+    "backgroundColor": "#ccc"
   },
   "tabBar": {
     "color": "#a7adb1",
@@ -22,7 +22,9 @@
       },
       {
         "text": "贷款",
-        "pagePath": "pages/loan/loan"
+        "pagePath": "pages/loan/loan",
+        "iconPath": "./static/moeny_a.png",
+        "selectedIconPath": "./static/money.png"
       },
       {
         "text": "财富",

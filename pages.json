@@ -3,43 +3,46 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+				
 			}
 		},
 		{
 			"path" : "pages/loan/loan",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "贷款"
 			}
 		},
 		{
 			"path" : "pages/wealth/wealth",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "财富"
 			}
 		},
 		{
 			"path" : "pages/service/service",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "服务"
 			}
 		},
 		{
 			"path" : "pages/my/my",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "我的"
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#5d87e4",
+		"backgroundColor": "#ccc"
+		
 	},
 	"uniIdRouter": {},
 	"tabBar": {
@@ -49,12 +52,12 @@
 			{
 				"text": "首页",
 				"pagePath": "pages/index/index"
-				
 			},
 			{
 				"text": "贷款",
-				"pagePath": "pages/loan/loan"
-				
+				"pagePath": "pages/loan/loan",
+				"iconPath": "./static/moeny_a.png",
+				"selectedIconPath": "./static/money.png"
 			},
 			{
 				"text": "财富",
