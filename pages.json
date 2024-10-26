@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "pages/loan/loan",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/wealth/wealth",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/service/service",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/my/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#a7adb1",
+		"selectedColor": "#459be9",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index"
+				
+			},
+			{
+				"text": "贷款",
+				"pagePath": "pages/loan/loan"
+				
+			},
+			{
+				"text": "财富",
+				"pagePath": "pages/wealth/wealth"
+				
+			},
+			{
+				"text": "服务",
+				"pagePath": "pages/service/service"
+				
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/my/my"
+				
+			}
+			
+		]
+	}
+}
