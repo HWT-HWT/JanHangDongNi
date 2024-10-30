@@ -6,26 +6,26 @@ const _sfc_main = {
     return {
       MyList: [
         {
-          ioc: "../static/my_iocn/ic_qy.png",
+          ioc: "../static/myiocn/ic_qy.png",
           name: "我的企业",
           NvaGo: 1
         },
         {
-          ioc: "../static/my_iocn/ic_ce.png",
+          ioc: "../static/myiocn/ic_ce.png",
           name: "我的测额"
         },
         {
-          ioc: "../static/my_iocn/iocn_8.png",
+          ioc: "../static/myiocn/iocn_8.png",
           name: "我的账户",
           NvaGo: 2
         },
         {
-          ioc: "../static/my_iocn/ic_home_ic_zncf.png",
+          ioc: "../static/myiocn/ic_home_ic_zncf.png",
           name: "我的贷款",
           NvaGo: 3
         },
         {
-          ioc: "../static/my_iocn/ic_us.png",
+          ioc: "../static/myiocn/ic_us.png",
           name: "关于我们"
         }
       ]

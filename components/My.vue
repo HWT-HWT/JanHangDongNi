@@ -7,7 +7,7 @@
 			{{item.name}}
 		</view>
 		<view class="point">
-			<image src="../static/my_iocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
+			<image src="../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 		</view>
 	</view>
 </template>

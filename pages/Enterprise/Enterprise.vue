@@ -8,7 +8,7 @@
 					广州友福贸易有限公司
 				</view>
 				<view class="ioc">
-					<image src="../../static/my_iocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
+					<image src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 				</view>
 			</view>
 			<view class="btn">
@@ -29,10 +29,10 @@
 		</view>
 		
 		<view class="bg-ioc">
-			<image src="../../static/my_iocn/ic_preferred_services.png" mode=""></image>
+			<image src="../../static/myiocn/ic_preferred_services.png" mode=""></image>
 		</view>
 		
-		<view class="serve">
+		<view class="serve" v-for="item in 4" :key="item">
 			 <view class="serveList">
 			 	<view class="text">
 			 		<view class="title">
@@ -44,10 +44,11 @@
 					</view>
 			 	</view>
 			 	<view class="ioc">
-			 		
+			 		<button type="primary" plain="true" style="width: 80px; height: 35px; font-size: 12px; border-radius: 50px; background-color: #4a79e0; color: white; border: none;">测一测</button>
 			 	</view>
 			 </view>
 		</view>
+		
 	</view>
 </template>
 
@@ -84,7 +85,6 @@
 				.text{
 					width: 85%;
 					height: 100%;
-					// border: 1px solid;
 					font-size: 15px;
 					display: flex;
 					align-items: center;
@@ -94,7 +94,6 @@
 				.ioc{
 					flex: 1;
 					height: 100%;
-					// border: 1px solid;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -108,11 +107,9 @@
 				width: 100%;
 				height: 50%;
 				display: flex;
-				// border: 1px solid red;
 				.btn-content{
 					width: 100%;
 					padding-top: 10px;
-					// border: 1px solid red;
 					button{
 						margin-right: 5px;
 						float: right;
@@ -135,6 +132,7 @@
 			width: 100%;
 			height: 25px;
 			// border: 1px solid;
+			margin-bottom: 20px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -145,45 +143,46 @@
 		}
 		.serve{
 			width: 100%;
-			height: 200px;
-			// border: 1px solid;
-			margin-top: 20px;
+			margin-top: -10px;
 			.serveList{
-				width: 90%;
+				width: 100%;
 				height: 100px;
-				border: 1px solid;
+				background: url('../../static/myiocn/bg_mrwh.png') no-repeat;
 				border-radius:5px;
+				background-size:100%;
 				margin: 0 auto;
 				display: flex;
 				.text{
 					width: 70%;
 					height: 100%;
-					border: 1px solid;
+					// border: 1px solid;
 					.title{
 						width: 100%;
 						height: 50%;
-						border: 1px solid;
+						// border: 1px solid;
 						display: flex;
+						margin-top: 5px;
 						align-items: center;
 						image{
 							width: 25px;
 							height: 25px;
-							margin: 0 5px 0 10px;
+							margin: 0 5px 0 20px;
 						}
 					}
 					.miniTitle{
 						width: 100%;
-						// margin-left:5px;
-						// padding-left: 20px;
-						border: 1px solid;
 						font-size: 12px;
 						color: #c6c6c6;
+						margin-left: 5px;
 					}
 				}
 				.ioc{
 					flex: 1;
 					height: 100%;
-					border: 1px solid;
+					// border: 1px solid;
+					display: flex;
+					// justify-content: center;
+					align-items: center;
 				}
 			}
 		}

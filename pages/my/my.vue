@@ -1,7 +1,8 @@
 <template>
 	<view class="SetMy">
 		<view class="SetMyHead">
-			<image src="../../static/my_iocn/top_bg.png" mode="" ></image>
+			<image src="../../static/Topbg.png" mode=""></image>
+			<button type="default" plain="true" >登陆/注册</button>
 			<view class="SetMyHeadTitle">
 				<view style="width: 100%; height: 50px;">
 					
@@ -13,7 +14,7 @@
 						</view>
 					</view>
 					<view class="iocn">
-						<image src="../../static/my_iocn/ic_setting.png" mode="" ></image>
+						<image src="../../static/myiocn/ic_setting.png" mode="" ></image>
 					</view>
 				</view>
 				<view class="Information">
@@ -37,27 +38,6 @@
 						</view>
 					</view>
 				</view>
-				
-				<view class="loin">
-					<view class="BgBox">
-						<image src="../../static/my_iocn/pic_ptbg.png" mode=""></image>
-						
-						<view class="iocn">
-							<image src="../../static/my_iocn/hz_pt.png" mode=""></image>
-						</view>
-						
-						<view class="textButton">
-							<view class="text">
-								
-							</view>
-							
-							<view class="buttom">
-								
-							</view>
-						</view>
-						
-					</view>
-				</view>
 			</view>
 		</view>
 		<view class="SetMyBody">
@@ -69,7 +49,11 @@
 		</view>
 		
 		<view class="img">
-			<image src="../../static/my_iocn/home_icon_footer.png" mode=""></image>
+			<view class="">
+				<image src="../../static/myiocn/home_icon_footer.png" mode=""></image>
+			</view>
+			
+			
 		</view>
 	</view>
 </template>
@@ -82,26 +66,27 @@
 			return {
 				MyList:[
 					{
-						ioc:'../static/my_iocn/ic_qy.png',
+						ioc:'../static/myiocn/ic_qy.png',
 						name:'我的企业',
 						NvaGo:1
 					},
 					{
-						ioc:'../static/my_iocn/ic_ce.png',
+						ioc:'../static/myiocn/ic_ce.png',
+						
 						name:'我的测额',
 					},
 					{
-						ioc:'../static/my_iocn/iocn_8.png',
+						ioc:'../static/myiocn/iocn_8.png',
 						name:'我的账户',
 						NvaGo:2
 					},
 					{
-						ioc:'../static/my_iocn/ic_home_ic_zncf.png',
+						ioc:'../static/myiocn/ic_home_ic_zncf.png',
 						name:'我的贷款',
 						NvaGo:3
 					},
 					{
-						ioc:'../static/my_iocn/ic_us.png',
+						ioc:'../static/myiocn/ic_us.png',
 						name:'关于我们',
 					},
 					]
@@ -118,14 +103,27 @@
 	.SetMy{
 		width: 100%;
 		overflow: hidden;
+		background-color: #f7f9ff;
 		.SetMyHead{
 			width: 100%;
-			aspect-ratio: 1/0.66;
-			position:relative;
+			aspect-ratio: 2/1.6;
 			image{
 				width: 100%;
 				height: 100%;
-				
+			}
+			button{
+				width: 100px;
+				height: 100%;
+				border:none;
+				border-radius: 50px;
+				height: 35px; 
+				background: url('../../static/myiocn/btn_dlzc.png') no-repeat;
+				box-shadow:0 4px 8px rgba(0, 0, 0, 0.3); ;
+				background-size: 100%;
+				font-size: 13px;
+				margin-top: -150rpx;
+				color: #6382c0;
+				margin-left: 450rpx;
 			}
 			.SetMyHeadTitle{
 				width: 100%;
@@ -153,16 +151,15 @@
 					}
 					
 				}
+				
 			}
 			.Information{
 				width: 100%;
-				// border:1px solid;
-				// height: 75px;
 				display: flex;
 				.Head{
 					width: 18%;
 					aspect-ratio: 1/1;
-					background: url('../../static/my_iocn/head_nor.png') no-repeat;
+					background: url('../../static/myiocn/head_nor.png') no-repeat;
 					background-size: 100%;
 					border: 2px solid #b2e6fe;
 					border-radius: 100%;
@@ -189,9 +186,8 @@
 							.ioc_{
 								align-self: center;
 								width: 30rpx;
-								// border:1px solid;
 								height: 30rpx;
-								background: url('../../static/my_iocn/ic_rz.png') no-repeat;
+								background: url('../../static/myiocn/ic_rz.png') no-repeat;
 								background-size: 30rpx;
 							}
 							.text{
@@ -205,60 +201,8 @@
 						}
 						.Phone{
 							flex: 1;
-							// border:1px solid;
 							align-self: center;
 							font-size: 12px;
-							// margin-top: 5rpx;
-							// margin-left: 5rpx;
-						}
-					}
-				}
-			}
-			.loin{
-				margin-top: 20px;
-				width: 100%;
-				height: 9vh;
-				border: 1px solid red;
-				position: relative;
-				top: 0.2rem;
-				.BgBox{
-					width: 90%;
-					height: 100%;
-					background: #f9faff;
-					margin: 0 auto;
-					border-radius: 10px;
-					position: relative;
-					display: flex;
-					bottom:0;
-					image{
-						width: 100%;
-						height: 100%;
-						border-radius: 10px;
-					}
-					.iocn{
-						width:30px ;
-						height: 40px;
-						// border: 1px solid;
-						position: absolute;
-						top: 0%;
-						left: 5%;
-					}
-					.textButton{
-						width: 80%;
-						height: 100%;
-						border: 1px solid;
-						position: absolute;
-						display: flex;
-						left:15%;
-						.text{
-							width: 70%;
-							height: 100%;
-							border: 1px solid;
-						}
-						.buttom{
-							width: 30%;
-							height: 100%;
-							border: 1px solid;
 						}
 					}
 				}
@@ -267,17 +211,15 @@
 		.SetMyBody{
 			width: 100%;
 			height:500px;
-			// border: 1px solid;
-			background: #f9faff;
+			background: #f7f9ff;
+			margin-top: 20px;
 			.title{
 				width: 90%;
 				height: 50px;
-				// border: 1px solid;
 				font-size: 18px;
 				font-family:'黑体';
 				line-height: 50px;
 				margin: 0 auto;
-				// margin-left: 20px;
 			}
 		}
 		.img{
