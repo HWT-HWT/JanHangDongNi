@@ -9,6 +9,7 @@
 		<view class="point">
 			<image src="../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 		</view>
+		
 	</view>
 </template>
 
@@ -27,11 +28,10 @@
 		},
 		methods:{
 			change(id){
-				// console.log(id);
-				if(id){
-					id = 1 ? uni.navigateTo({url:'/pages/Enterprise/Enterprise'}) : ''
-				}
-			}
+					id === 1 ? uni.navigateTo({url:'/pages/Enterprise/Enterprise'}) : '';
+					id === 2 ? this.$emit('open') : '';
+			},
+			
 		},
 	}
 </script>

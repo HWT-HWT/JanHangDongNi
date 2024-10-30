@@ -33,16 +33,36 @@ const _sfc_main = {
   },
   components: {
     MyList
+  },
+  methods: {
+    open() {
+      console.log(this.$refs.popup.open("bottom"));
+    },
+    close() {
+      this.$refs.popup.close();
+    }
   }
 };
 if (!Array) {
   const _component_MyList = common_vendor.resolveComponent("MyList");
-  _component_MyList();
+  const _easycom_uni_popup2 = common_vendor.resolveComponent("uni-popup");
+  (_component_MyList + _easycom_uni_popup2)();
+}
+const _easycom_uni_popup = () => "../../uni_modules/uni-popup/components/uni-popup/uni-popup.js";
+if (!Math) {
+  _easycom_uni_popup();
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.p({
+    a: common_vendor.o($options.open),
+    b: common_vendor.p({
       MyList: $data.MyList
+    }),
+    c: common_vendor.o(($event) => $options.close()),
+    d: common_vendor.sr("popup", "2f1ef635-1"),
+    e: common_vendor.p({
+      type: "bottom",
+      ["background-color"]: "#fff"
     })
   };
 }

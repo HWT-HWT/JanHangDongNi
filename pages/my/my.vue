@@ -9,17 +9,17 @@
 				</view>
 				<view class="HeadTitle">
 					<view class="title">
-						<view style="margin: 0 0 0 350rpx ;">
+						<view style="margin: 0 0 0 350rpx ; font-size: 30rpx;">
 							我的
 						</view>
 					</view>
 					<view class="iocn">
-						<image src="../../static/myiocn/ic_setting.png" mode="" ></image>
+						<image  src="../../static/myiocn/ic_setting.png" mode="" ></image>
 					</view>
 				</view>
 				<view class="Information">
 					<view class="Head">
-						
+						<image class="Head-image" src="../../static/myiocn/head_nor.png" mode=""></image>
 					</view>
 					<view class="name">
 						<text>*华平</text>
@@ -45,16 +45,39 @@
 				我的业务
 			</view>
 			
-			<MyList :MyList="MyList"></MyList>
+			<MyList :MyList="MyList" @open="open"></MyList>
 		</view>
 		
 		<view class="img">
 			<view class="">
 				<image src="../../static/myiocn/home_icon_footer.png" mode=""></image>
 			</view>
-			
-			
 		</view>
+		
+		<uni-popup class="popup" ref="popup" type="bottom" 
+		background-color="#fff"
+		>
+			<view class="popup-title">
+				<view class="cloas" @click="close()">
+					取消
+				</view>
+				<view class="popup-text">
+					请选择关联企业
+				</view>
+				<view class="rigth">
+					确定
+				</view>
+			</view>
+			
+			<view class="popup-conten">
+				<view class="popup-name">
+					广州友福贸易有限公司
+				</view>
+				<view class="popup-ioc">
+					<image class="popup-image" src="../../static/myiocn/direction_right_icon.png" mode="" ></image>
+				</view>
+			</view>
+		</uni-popup>
 	</view>
 </template>
 
@@ -94,6 +117,14 @@
 		},
 		components:{
 			MyList
+		},
+		methods:{
+			open(){
+				console.log(this.$refs.popup.open('bottom'));
+			},
+			close(){
+				this.$refs.popup.close()
+			}
 		}
 		
 	}
@@ -159,11 +190,12 @@
 				.Head{
 					width: 18%;
 					aspect-ratio: 1/1;
-					background: url('../../static/myiocn/head_nor.png') no-repeat;
-					background-size: 100%;
-					border: 2px solid #b2e6fe;
 					border-radius: 100%;
 					margin-left: 40rpx;
+					.Head-image{
+						width: 100%;
+						height: 100%;
+					}
 				}
 				.name{
 					flex: 1;
@@ -172,7 +204,7 @@
 					height: 100%;
 					color: white;
 					font-family: '黑体';
-					font-size: 18px;
+					font-size: 36rpx;
 					// border:1px solid;
 					.provePhone{
 						width: 100%;
@@ -192,7 +224,7 @@
 							}
 							.text{
 								flex: 1;
-								font-size: 12px;
+								font-size: 24rpx;
 								align-self: center;
 								margin-left: 5rpx;
 								color: #5fd26d;
@@ -202,7 +234,7 @@
 						.Phone{
 							flex: 1;
 							align-self: center;
-							font-size: 12px;
+							font-size: 24rpx;
 						}
 					}
 				}
@@ -233,6 +265,67 @@
 			image{
 				width: 350rpx;
 				height: 20rpx;
+			}
+		}
+		.popup-title{
+			width: 100%;
+			height: 40px;
+			background-color: #eeeeee;
+			display: flex;
+			color: #6d6d6d;
+			.cloas{
+				width: 20%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.popup-text{
+				width: 60%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.rigth{
+				width: 20%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.popup-conten{
+			width: 100%;
+			height: 40vh;
+			display: flex;
+			
+			.popup-name{
+				width: 80%;
+				height: 40px;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				padding-left: 140rpx;
+				align-items: center;
+				// border: 1px solid;
+				color: #a1a1a1;
+				border-bottom: 1px solid #ccc;
+				font-size: 14px;
+			}
+			.popup-ioc{
+				// flex: ;
+				width: 20%;
+				height: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				// border: 1px solid;
+				border-bottom: 1px solid #ccc;
+				.popup-image{
+					width: 30rpx;
+					height: 20rpx;
+				}
 			}
 		}
 	}

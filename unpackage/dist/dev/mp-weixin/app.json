@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/my/my",
-    "pages/Enterprise/Enterprise"
+    "pages/Enterprise/Enterprise",
+    "pages/message/message"
   ],
   "window": {
     "navigationBarTextStyle": "white",

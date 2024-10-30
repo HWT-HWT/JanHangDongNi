@@ -7,6 +7,13 @@ const _sfc_main = {
   },
   components: {
     NavTab
+  },
+  methods: {
+    change() {
+      common_vendor.index.navigateTo({
+        url: "/pages/message/message"
+      });
+    }
   }
 };
 if (!Array) {
@@ -15,7 +22,8 @@ if (!Array) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f(4, (item, k0, i0) => {
+    a: common_vendor.o(($event) => $options.change()),
+    b: common_vendor.f(4, (item, k0, i0) => {
       return {
         a: item
       };

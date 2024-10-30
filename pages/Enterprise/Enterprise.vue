@@ -7,7 +7,7 @@
 				<view class="text">
 					广州友福贸易有限公司
 				</view>
-				<view class="ioc">
+				<view class="ioc" @click="change()">
 					<image src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 				</view>
 			</view>
@@ -64,6 +64,13 @@
 		components:{
 			NavTab
 		},
+		methods:{
+			change(){
+				uni.navigateTo({
+					url:'/pages/message/message'
+				})
+			}
+		}
 		
 	}
 </script>
@@ -71,6 +78,7 @@
 <style lang="scss">
 	.enterprise{
 		width: 100%;
+		height: 1vh;
 		background-color: #f7f7f7;
 		.list{
 			width: 100%;
@@ -130,7 +138,7 @@
 		.bg-ioc{
 			margin-top: 30px;
 			width: 100%;
-			height: 25px;
+			height: 50rpx;
 			// border: 1px solid;
 			margin-bottom: 20px;
 			display: flex;
@@ -161,7 +169,8 @@
 						height: 50%;
 						// border: 1px solid;
 						display: flex;
-						margin-top: 5px;
+						margin-top: 10rpx;
+						margin-left: 10rpx;
 						align-items: center;
 						image{
 							width: 25px;
@@ -173,7 +182,7 @@
 						width: 100%;
 						font-size: 12px;
 						color: #c6c6c6;
-						margin-left: 5px;
+						margin-left: 15px;
 					}
 				}
 				.ioc{
