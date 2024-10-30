@@ -1,6 +1,9 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
-    "uni-search-bar": "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar"
+    "loan": "../../components/loan",
+    "strategy": "../../components/Strategy",
+    "uni-search-bar": "../../uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "z-tabs": "../../uni_modules/z-tabs/components/z-tabs/z-tabs"
   }
 }

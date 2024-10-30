@@ -1,0 +1,118 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.loan.data-v-6146b754 {
+  width: 100%;
+  margin-top: 2%;
+}
+.loan .loan-money.data-v-6146b754 {
+  width: 95%;
+  height: 125px;
+  margin: 0 auto;
+  background: #f9fafc;
+  border-radius: 10px;
+}
+.loan .loan-money .loan-title.data-v-6146b754 {
+  width: 100%;
+  height: 40%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.loan .loan-money .loan-title .title.data-v-6146b754 {
+  margin-left: 20px;
+}
+.loan .loan-money .loan-title .min-title.data-v-6146b754 {
+  width: 100px;
+  height: 20px;
+  border: 1px solid;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 0 100px 100px 100px;
+  border-color: #ebba9a;
+  color: #dc8856;
+}
+.loan .loan-money .loan-content.data-v-6146b754 {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+}
+.loan .loan-money .loan-content .money.data-v-6146b754 {
+  width: 35%;
+  height: 100%;
+}
+.loan .loan-money .loan-content .money view.data-v-6146b754 {
+  margin-left: 20px;
+}
+.loan .loan-money .loan-content .money .num.data-v-6146b754 {
+  margin-top: 20px;
+  flex: 1;
+  color: #384e99;
+  font-weight: 500;
+}
+.loan .loan-money .loan-content .money .str.data-v-6146b754 {
+  flex: 1;
+  font-size: 11px;
+  color: #ccc;
+}
+.loan .loan-money .loan-content .percentage.data-v-6146b754 {
+  width: 30%;
+  height: 100%;
+}
+.loan .loan-money .loan-content .percentage view.data-v-6146b754 {
+  margin-left: 20px;
+}
+.loan .loan-money .loan-content .percentage .num.data-v-6146b754 {
+  margin-top: 20px;
+  flex: 1;
+  color: #384e99;
+  font-weight: 500;
+}
+.loan .loan-money .loan-content .percentage .str.data-v-6146b754 {
+  flex: 1;
+  font-size: 11px;
+  color: #ccc;
+}
+.loan .loan-money .loan-content .btn.data-v-6146b754 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loan .loan-money .loan-content .btn .bon.data-v-6146b754 {
+  width: 70%;
+  height: 50%;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #4876de;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  font-weight: "黑体";
+}

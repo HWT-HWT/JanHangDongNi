@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "财富",
-  "usingComponents": {
-    "navbar-title": "../../components/NavbarTitle"
-  }
-}
