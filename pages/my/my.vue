@@ -2,7 +2,7 @@
 	<view class="SetMy">
 		<view class="SetMyHead">
 			<image src="../../static/Topbg.png" mode=""></image>
-			<button type="default" plain="true" >登陆/注册</button>
+			<!-- <button type="default" plain="true" >登陆/注册</button> -->
 			<view class="SetMyHeadTitle">
 				<view style="width: 100%; height: 50px;">
 					
@@ -144,7 +144,7 @@
 		background-color: #f7f9ff;
 		.SetMyHead{
 			width: 100%;
-			aspect-ratio: 2/1.6;
+			aspect-ratio: 2/1.5;
 			image{
 				width: 100%;
 				height: 100%;

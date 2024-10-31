@@ -14,7 +14,7 @@
 						<image src="../../static/SVG/positioning.svg"></image>
 					</view>
 					<view class="text">
-						<text>--</text>
+						<text>广州</text>
 					</view>
 				</view>
 				<view class="navigationBar-search">

@@ -35,6 +35,72 @@
   line-height: 40px;
   padding: 10px 0 0 40px;
 }
+.Inquire .Details.data-v-88930688 {
+  margin: 10px auto;
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+}
+.Inquire .Details .name.data-v-88930688 {
+  margin-left: 20px;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Inquire .Details .Repayment.data-v-88930688 {
+  width: 20%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.Inquire .Details .Day.data-v-88930688 {
+  width: 25%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.Inquire .DetailsDay.data-v-88930688 {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 2px;
+}
+.Inquire .DetailsDay .ioc.data-v-88930688 {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Inquire .DetailsDay .ioc .ioc-image.data-v-88930688 {
+  width: 10rpx;
+  height: 14rpx;
+}
+.Inquire .DetailsDay .DayHk.data-v-88930688 {
+  flex: 1;
+  padding-top: 10px;
+}
+.Inquire .DetailsDay .money.data-v-88930688 {
+  padding-top: 10px;
+  flex: 1;
+  text-align: right;
+}
 .Inquire .LoanMoeny.data-v-88930688 {
   width: 95%;
   height: 120px;
@@ -71,6 +137,7 @@
 }
 .Inquire .foot.data-v-88930688 {
   width: 100%;
+  margin-top: 350px;
   display: flex;
   justify-content: center;
   color: #a8a8a9;

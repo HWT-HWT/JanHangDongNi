@@ -465,7 +465,9 @@
 			},
 			//点击了tabs
 			tabsClick(index,item) {
+				// console.log(index,item);
 				if (item.disabled) return;
+				// this.$emit('secondClick',index)
 				if (this.currentIndex != index) {
 					this.shouldSetDx = false;
 					this.$emit('change', index, item[this.valueKey]);
