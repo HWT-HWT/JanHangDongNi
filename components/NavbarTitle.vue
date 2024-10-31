@@ -1,5 +1,4 @@
 <template>
-	<view>
 		<view class="navbar-title">
 			<view class="occupy">
 				
@@ -21,7 +20,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
 </template>
 
 <script>
@@ -37,7 +35,7 @@
 				// console.log(123);
 				uni.navigateBack()
 			}
-		}
+		},
 	}
 </script>
 
@@ -45,7 +43,7 @@
 	.navbar-title{
 		width: 100%;
 		height: 100px;
-		background-color: #1296db;
+		background-color: #4a79e0;
 		.occupy{
 			width: 100%;
 			height: 60%;

@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/my/my",
     "pages/Enterprise/Enterprise",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/MyAccount/MyAccount",
+    "pages/loan/loan"
   ],
   "window": {
     "navigationBarTextStyle": "white",

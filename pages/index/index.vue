@@ -201,6 +201,7 @@
 				align-items: center;
 				font-weight: 600;
 				color: #d67c3b;
+				font-size: 28rpx;
 				
 			}
 		}
@@ -263,7 +264,7 @@
 				.text{
 					width: 85%;
 					height: 100%;
-					font-size: 25rpx;
+					font-size: 14px;
 					margin-left: 5%;
 					line-height: 2.5rem;
 				}

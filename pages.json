@@ -27,6 +27,20 @@
 			{
 				"navigationBarTitleText" : ""
 			}
+		},
+		{
+			"path" : "pages/MyAccount/MyAccount",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/loan/loan",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {

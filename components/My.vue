@@ -30,6 +30,7 @@
 			change(id){
 					id === 1 ? uni.navigateTo({url:'/pages/Enterprise/Enterprise'}) : '';
 					id === 2 ? this.$emit('open') : '';
+					id === 3 ? uni.navigateTo({url:'/pages/loan/loan'}) : '';
 			},
 			
 		},

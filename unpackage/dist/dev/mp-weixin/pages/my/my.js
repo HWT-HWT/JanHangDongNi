@@ -40,6 +40,11 @@ const _sfc_main = {
     },
     close() {
       this.$refs.popup.close();
+    },
+    account() {
+      common_vendor.index.navigateTo({
+        url: "/pages/MyAccount/MyAccount"
+      });
     }
   }
 };
@@ -59,8 +64,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       MyList: $data.MyList
     }),
     c: common_vendor.o(($event) => $options.close()),
-    d: common_vendor.sr("popup", "2f1ef635-1"),
-    e: common_vendor.p({
+    d: common_vendor.o(($event) => $options.account()),
+    e: common_vendor.sr("popup", "2f1ef635-1"),
+    f: common_vendor.p({
       type: "bottom",
       ["background-color"]: "#fff"
     })

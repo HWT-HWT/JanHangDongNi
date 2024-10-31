@@ -64,7 +64,7 @@
 				<view class="popup-text">
 					请选择关联企业
 				</view>
-				<view class="rigth">
+				<view class="rigth" @click="account()">
 					确定
 				</view>
 			</view>
@@ -124,6 +124,13 @@
 			},
 			close(){
 				this.$refs.popup.close()
+			},
+			
+			account(){
+				// console.log(123);
+				uni.navigateTo({
+					url:'/pages/MyAccount/MyAccount'
+				})
 			}
 		}
 		

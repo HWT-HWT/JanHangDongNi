@@ -14,6 +14,7 @@ const _sfc_main = {
     change(id) {
       id === 1 ? common_vendor.index.navigateTo({ url: "/pages/Enterprise/Enterprise" }) : "";
       id === 2 ? this.$emit("open") : "";
+      id === 3 ? common_vendor.index.navigateTo({ url: "/pages/loan/loan" }) : "";
     }
   }
 };
