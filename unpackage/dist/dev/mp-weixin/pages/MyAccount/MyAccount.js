@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const NavbarTitleVue = () => "../../components/NavbarTitle.js";
 const _sfc_main = {
   data() {
@@ -28,8 +29,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       ["active-color"]: "#fff",
       ["bg-color"]: "#4b7ae6",
       unit: "12rpx"
-    })
+    }),
+    b: common_assets._imports_0$3,
+    c: common_assets._imports_1$3,
+    d: common_assets._imports_0$2
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-13a3a337"], ["__file", "D:/uniapp/建行惠懂你/pages/MyAccount/MyAccount.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-13a3a337"]]);
 wx.createPage(MiniProgramPage);

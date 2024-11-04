@@ -8,6 +8,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/Disbursement/Disbursement",
+          "pathName": "pages/Disbursement/Disbursement",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/loan/loan",
           "pathName": "pages/loan/loan",
           "query": "",

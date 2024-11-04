@@ -8,6 +8,7 @@ if (!Math) {
   "./pages/message/message.js";
   "./pages/MyAccount/MyAccount.js";
   "./pages/loan/loan.js";
+  "./pages/Disbursement/Disbursement.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -20,9 +21,8 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/uniapp/建行惠懂你/App.vue"]]);
 function createApp() {
-  const app = common_vendor.createSSRApp(App);
+  const app = common_vendor.createSSRApp(_sfc_main);
   return {
     app
   };

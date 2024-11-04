@@ -5,7 +5,8 @@
     "pages/Enterprise/Enterprise",
     "pages/message/message",
     "pages/MyAccount/MyAccount",
-    "pages/loan/loan"
+    "pages/loan/loan",
+    "pages/Disbursement/Disbursement"
   ],
   "window": {
     "navigationBarTextStyle": "white",

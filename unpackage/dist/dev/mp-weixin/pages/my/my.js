@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const MyList = () => "../../components/My.js";
 const _sfc_main = {
   data() {
@@ -59,18 +60,23 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.o($options.open),
-    b: common_vendor.p({
+    a: common_assets._imports_0$1,
+    b: common_assets._imports_1$1,
+    c: common_assets._imports_2$1,
+    d: common_vendor.o($options.open),
+    e: common_vendor.p({
       MyList: $data.MyList
     }),
-    c: common_vendor.o(($event) => $options.close()),
-    d: common_vendor.o(($event) => $options.account()),
-    e: common_vendor.sr("popup", "2f1ef635-1"),
-    f: common_vendor.p({
+    f: common_assets._imports_3$1,
+    g: common_vendor.o(($event) => $options.close()),
+    h: common_vendor.o(($event) => $options.account()),
+    i: common_assets._imports_4,
+    j: common_vendor.sr("popup", "2f1ef635-1"),
+    k: common_vendor.p({
       type: "bottom",
       ["background-color"]: "#fff"
     })
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-2f1ef635"], ["__file", "D:/uniapp/建行惠懂你/pages/my/my.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-2f1ef635"]]);
 wx.createPage(MiniProgramPage);

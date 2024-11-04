@@ -23,10 +23,57 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.uni-popup[data-v-4dd3c44b] {
+  position: fixed;
+  z-index: 99;
+}
+.uni-popup.top[data-v-4dd3c44b], .uni-popup.left[data-v-4dd3c44b], .uni-popup.right[data-v-4dd3c44b] {
+  top: 0;
+}
+.uni-popup .uni-popup__wrapper[data-v-4dd3c44b] {
+  display: block;
+  position: relative;
+  /* iphonex 等安全区设置，底部安全区适配 */
+}
+.uni-popup .uni-popup__wrapper.left[data-v-4dd3c44b], .uni-popup .uni-popup__wrapper.right[data-v-4dd3c44b] {
+  padding-top: 0;
+  flex: 1;
+}
+.fixforpc-z-index[data-v-4dd3c44b] {
+  z-index: 999;
+}
+.fixforpc-top[data-v-4dd3c44b] {
+  top: 0;
+}
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
 .navbar-title[data-v-3dce3942] {
   width: 100%;
   height: 100px;
-  background-color: #1296db;
+  background-color: #4a79e0;
 }
 .navbar-title .occupy[data-v-3dce3942] {
   width: 100%;
@@ -154,15 +201,29 @@
 .SetMy[data-v-2f1ef635] {
   width: 100%;
   overflow: hidden;
+  background-color: #f7f9ff;
 }
 .SetMy .SetMyHead[data-v-2f1ef635] {
   width: 100%;
-  aspect-ratio: 1/0.66;
-  position: relative;
+  aspect-ratio: 2/1.5;
 }
 .SetMy .SetMyHead uni-image[data-v-2f1ef635] {
   width: 100%;
   height: 100%;
+}
+.SetMy .SetMyHead uni-button[data-v-2f1ef635] {
+  width: 100px;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  background: url("../../static/myiocn/btn_dlzc.png") no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-size: 100%;
+  font-size: 13px;
+  margin-top: -4.6875rem;
+  color: #6382c0;
+  margin-left: 14.0625rem;
 }
 .SetMy .SetMyHead .SetMyHeadTitle[data-v-2f1ef635] {
   width: 100%;
@@ -195,11 +256,12 @@
 .SetMy .SetMyHead .Information .Head[data-v-2f1ef635] {
   width: 18%;
   aspect-ratio: 1/1;
-  background: url("../../static/my_iocn/head_nor.png") no-repeat;
-  background-size: 100%;
-  border: 2px solid #b2e6fe;
   border-radius: 100%;
   margin-left: 1.25rem;
+}
+.SetMy .SetMyHead .Information .Head .Head-image[data-v-2f1ef635] {
+  width: 100%;
+  height: 100%;
 }
 .SetMy .SetMyHead .Information .name[data-v-2f1ef635] {
   flex: 1;
@@ -208,7 +270,7 @@
   height: 100%;
   color: white;
   font-family: "黑体";
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .SetMy .SetMyHead .Information .name .provePhone[data-v-2f1ef635] {
   width: 100%;
@@ -225,12 +287,12 @@
   align-self: center;
   width: 0.9375rem;
   height: 0.9375rem;
-  background: url("../../static/my_iocn/ic_rz.png") no-repeat;
+  background: url("../../static/myiocn/ic_rz.png") no-repeat;
   background-size: 0.9375rem;
 }
 .SetMy .SetMyHead .Information .name .provePhone .prove .text[data-v-2f1ef635] {
   flex: 1;
-  font-size: 12px;
+  font-size: 0.75rem;
   align-self: center;
   margin-left: 0.15625rem;
   color: #5fd26d;
@@ -238,60 +300,13 @@
 .SetMy .SetMyHead .Information .name .provePhone .Phone[data-v-2f1ef635] {
   flex: 1;
   align-self: center;
-  font-size: 12px;
-}
-.SetMy .SetMyHead .loin[data-v-2f1ef635] {
-  margin-top: 20px;
-  width: 100%;
-  height: 9vh;
-  border: 1px solid red;
-  position: relative;
-  top: 0.2rem;
-}
-.SetMy .SetMyHead .loin .BgBox[data-v-2f1ef635] {
-  width: 90%;
-  height: 100%;
-  background: #f9faff;
-  margin: 0 auto;
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  bottom: 0;
-}
-.SetMy .SetMyHead .loin .BgBox uni-image[data-v-2f1ef635] {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.SetMy .SetMyHead .loin .BgBox .iocn[data-v-2f1ef635] {
-  width: 30px;
-  height: 40px;
-  position: absolute;
-  top: 0%;
-  left: 5%;
-}
-.SetMy .SetMyHead .loin .BgBox .textButton[data-v-2f1ef635] {
-  width: 80%;
-  height: 100%;
-  border: 1px solid;
-  position: absolute;
-  display: flex;
-  left: 15%;
-}
-.SetMy .SetMyHead .loin .BgBox .textButton .text[data-v-2f1ef635] {
-  width: 70%;
-  height: 100%;
-  border: 1px solid;
-}
-.SetMy .SetMyHead .loin .BgBox .textButton .buttom[data-v-2f1ef635] {
-  width: 30%;
-  height: 100%;
-  border: 1px solid;
+  font-size: 0.75rem;
 }
 .SetMy .SetMyBody[data-v-2f1ef635] {
   width: 100%;
   height: 500px;
-  background: #f9faff;
+  background: #f7f9ff;
+  margin-top: 20px;
 }
 .SetMy .SetMyBody .title[data-v-2f1ef635] {
   width: 90%;
@@ -311,5 +326,62 @@
 }
 .SetMy .img uni-image[data-v-2f1ef635] {
   width: 10.9375rem;
+  height: 0.625rem;
+}
+.SetMy .popup-title[data-v-2f1ef635] {
+  width: 100%;
+  height: 40px;
+  background-color: #eeeeee;
+  display: flex;
+  color: #6d6d6d;
+}
+.SetMy .popup-title .cloas[data-v-2f1ef635] {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SetMy .popup-title .popup-text[data-v-2f1ef635] {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SetMy .popup-title .rigth[data-v-2f1ef635] {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SetMy .popup-conten[data-v-2f1ef635] {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+.SetMy .popup-conten .popup-name[data-v-2f1ef635] {
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-left: 4.375rem;
+  align-items: center;
+  color: #a1a1a1;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.SetMy .popup-conten .popup-ioc[data-v-2f1ef635] {
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.SetMy .popup-conten .popup-ioc .popup-image[data-v-2f1ef635] {
+  width: 0.9375rem;
   height: 0.625rem;
 }

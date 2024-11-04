@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../../common/vendor.js");
+const common_assets = require("../../common/assets.js");
 const NavbarTitle = () => "../../components/NavbarTitle.js";
 const navTab = () => "../../components/navTab.js";
 const loan = () => "../../components/loan.js";
@@ -39,38 +40,42 @@ if (!Math) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.p({
+    a: common_assets._imports_0,
+    b: common_vendor.p({
       radius: "5",
       placeholder: "代发工资",
       clearButton: "always",
       cancelButton: "none",
       bgColor: "#000"
     }),
-    b: common_vendor.f(4, (item, index, i0) => {
+    c: common_vendor.f(4, (item, index, i0) => {
       return {
         a: `../../static/ioc/title/title_${index + 1}.png`,
         b: index
       };
     }),
-    c: common_vendor.f(10, (item, index, i0) => {
+    d: common_assets._imports_1,
+    e: common_vendor.f(10, (item, index, i0) => {
       return {
         a: `../../static/ioc/bar/iocn_${index + 1}.png`,
         b: common_vendor.t($data.operationBar[index]),
         c: item
       };
     }),
-    d: common_vendor.f(6, (item, k0, i0) => {
+    f: common_assets._imports_2,
+    g: common_vendor.f(6, (item, k0, i0) => {
       return {
         a: item
       };
     }),
-    e: common_vendor.p({
+    h: common_assets._imports_3,
+    i: common_vendor.p({
       list: $data.list,
       ["inactive-color"]: "#6f6f6f",
       ["active-color"]: "#000",
       unit: "12rpx"
     }),
-    f: common_vendor.f($data.loanList, (item, index, i0) => {
+    j: common_vendor.f($data.loanList, (item, index, i0) => {
       return {
         a: index,
         b: "1cf27b2a-2-" + i0,
@@ -79,7 +84,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         })
       };
     }),
-    g: common_vendor.p({
+    k: common_vendor.p({
       list: $data.Strategy,
       ["inactive-color"]: "#6f6f6f",
       ["active-color"]: "#000",
@@ -87,5 +92,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   };
 }
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cf27b2a"], ["__file", "D:/uniapp/建行惠懂你/pages/index/index.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1cf27b2a"]]);
 wx.createPage(MiniProgramPage);

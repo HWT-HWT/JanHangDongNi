@@ -578,5 +578,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     p: common_vendor.s($props.tabsStyle)
   };
 }
-const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-0ac4bf81"], ["__file", "D:/uniapp/建行惠懂你/uni_modules/z-tabs/components/z-tabs/z-tabs.vue"]]);
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-0ac4bf81"]]);
 wx.createComponent(Component);

@@ -45,16 +45,16 @@
 				</view>
 			</view>
 			
-			<view class="DetailsDay" v-for="item in DetailsDay " :key="item">
+			<view class="DetailsDay" v-for="item in DetailsDay " :key="item" @click="Disbursement(item)">
 				<view class="ioc">
 					<image class="ioc-image" style="width: 7px; height: 7px;" src="../../static/myiocn/ic_circle_msg.png" mode=""></image>
 				</view>
 				<view class="DayHk">
 					<view class="DayHk-day">
-						{{item.data}}
+						{{item.data}}{{item.week}}
 					</view>
 					<view class="DayHk-text">
-						还款
+						{{item.name}}
 					</view>
 				</view>
 				<view class="money">
@@ -65,7 +65,7 @@
 						{{item.money}}
 					</view>
 				</view>
-				<view class="ioc">
+				<view class="ioc" >
 					<image class="ioc-image" src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 				</view>
 			</view>
@@ -90,9 +90,58 @@
 				Inquire:['余额','我的申请','明细'],
 				index:true,
 				DetailsDay:[
-					{data:'2024/08/21 星期三',money:'2,030.00'},
-					{data:'2024/09/21 星期六',money:'2,030.00'},
-					{data:'2024/10/21 星期一',money:'2,030.00'},
+					{	
+						data:'2024/10/21',
+						money:'2,030.00',
+						name:'还款',
+						week: '星期一',
+						list:{
+							"还款时间":'2024/10/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':''
+						},
+					},
+					{
+						data:'2024/09/21 ',
+						money:'2,030.00',
+						name:'还款',
+						week: '星期六',
+						list:{
+							"还款时间":'2024/09/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':''
+						},
+					},
+					{
+						data:'2024/08/21 ',
+						money:'2,030.00',
+						name:'还款',
+						week: '星期三',
+						list:{
+							"还款时间":'2024/08/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':'2617003320107801311'
+						},
+					},
+					{
+						data:'2024/07/24 ',
+						money:'700,000.00',
+						name:'支用',
+						week: '星期三',
+						list:{
+							"支用时间":'2024/10/21 09:33:10',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'102008P051721784790059246',
+							'贷款账号':'4400***9724'
+						},
+						istrue:true
+					},
 				]
 			};
 		},
@@ -102,6 +151,17 @@
 		methods:{
 			secondClick(index){
 				index === 2 ? this.index = false : this.index = true
+			},
+			Disbursement(item){
+				wx.clearStorageSync();
+				wx.setStorageSync('DetailsDay',item)
+				// #ifdef APP
+				localStorage.removeItem('DetailsDay');  
+				localStorage.setItem('DetailsDay',item)
+				// #endif
+				uni.navigateTo({
+					url:'/pages/Disbursement/Disbursement'
+				})
 			}
 		}
 
