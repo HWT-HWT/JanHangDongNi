@@ -4,11 +4,11 @@ const common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
   "./pages/my/my.js";
-  "./pages/Enterprise/Enterprise.js";
+  "./pages/loan/loan.js";
   "./pages/message/message.js";
   "./pages/MyAccount/MyAccount.js";
-  "./pages/loan/loan.js";
   "./pages/Disbursement/Disbursement.js";
+  "./pages/Enterprise/Enterprise.js";
 }
 const _sfc_main = {
   onLaunch: function() {

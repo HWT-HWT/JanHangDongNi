@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "我的",
   "usingComponents": {
     "navbar-title": "../../components/NavbarTitle",
     "z-tabs": "../../uni_modules/z-tabs/components/z-tabs/z-tabs"

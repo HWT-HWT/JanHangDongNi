@@ -11,8 +11,7 @@ const _sfc_main = {
     NavbarTitleVue
   },
   created() {
-    this.DetailsDay = common_vendor.wx$1.getStorageSync("DetailsDay");
-    console.log(this.DetailsDay.data);
+    this.DetailsDay = common_vendor.index.getStorageSync("DetailsDay");
   }
 };
 if (!Array) {
@@ -30,10 +29,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     e: common_vendor.f($data.DetailsDay.list, (index, vlaue, i0) => {
       return {
         a: common_vendor.t(vlaue),
-        b: common_vendor.t(index)
+        b: common_vendor.t(index),
+        c: vlaue
       };
-    }),
-    f: _ctx.item
+    })
   });
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render]]);

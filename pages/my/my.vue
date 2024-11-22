@@ -1,15 +1,18 @@
 <template>
 	<view class="SetMy">
 		<view class="SetMyHead">
-			<image src="../../static/Topbg.png" mode=""></image>
-			<!-- <button type="default" plain="true" >登陆/注册</button> -->
+			
+			<image src="../../static/myiocn/Topbg.png"></image>
+			
 			<view class="SetMyHeadTitle">
-				<view style="width: 100%; height: 50px;">
+				<view style="width: 100%; height: 40px;">
 					
 				</view>
+				
 				<view class="HeadTitle">
+					
 					<view class="title">
-						<view style="margin: 0 0 0 350rpx ; font-size: 30rpx;">
+						<view style="margin: 0 0 0 350rpx ; font-size: 36rpx;">
 							我的
 						</view>
 					</view>
@@ -17,6 +20,7 @@
 						<image  src="../../static/myiocn/ic_setting.png" mode="" ></image>
 					</view>
 				</view>
+				
 				<view class="Information">
 					<view class="Head">
 						<image class="Head-image" src="../../static/myiocn/head_nor.png" mode=""></image>
@@ -144,7 +148,7 @@
 		background-color: #f7f9ff;
 		.SetMyHead{
 			width: 100%;
-			aspect-ratio: 2/1.5;
+			aspect-ratio: 2/1.4;
 			image{
 				width: 100%;
 				height: 100%;
@@ -200,8 +204,8 @@
 					border-radius: 100%;
 					margin-left: 40rpx;
 					.Head-image{
-						width: 100%;
-						height: 100%;
+						width: 150rpx;
+						height: 150rpx;
 					}
 				}
 				.name{
@@ -211,7 +215,7 @@
 					height: 100%;
 					color: white;
 					font-family: '黑体';
-					font-size: 36rpx;
+					font-size: 36rpx	;
 					// border:1px solid;
 					.provePhone{
 						width: 100%;

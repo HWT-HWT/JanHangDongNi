@@ -872,88 +872,92 @@
   margin: 0 auto;
   background: #f9fafc;
   border-radius: 10px;
+  padding: 0.3125rem 0;
 }
 .loan .loan-money .loan-title[data-v-6146b754] {
   width: 100%;
   height: 40%;
-  font-weight: 700;
   display: flex;
   align-items: center;
 }
 .loan .loan-money .loan-title .title[data-v-6146b754] {
   margin-left: 20px;
+  font-size: 1.09375rem;
+  font-weight: bold;
+  letter-spacing: 0.03125rem;
 }
 .loan .loan-money .loan-title .min-title[data-v-6146b754] {
-  width: 100px;
-  height: 20px;
-  border: 1px solid;
+  padding: 0.3125rem;
   text-align: center;
   margin-left: 5px;
-  font-size: 12px;
+  font-size: 0.78125rem;
   align-items: center;
   border-radius: 0 100px 100px 100px;
   border-color: #ebba9a;
   color: #dc8856;
+  border: 1px solid;
 }
 .loan .loan-money .loan-content[data-v-6146b754] {
   width: 100%;
-  height: 60%;
-  border-radius: 20px;
   display: flex;
 }
 .loan .loan-money .loan-content .money[data-v-6146b754] {
-  width: 35%;
-  height: 100%;
-}
-.loan .loan-money .loan-content .money uni-view[data-v-6146b754] {
-  margin-left: 20px;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .loan .loan-money .loan-content .money .num[data-v-6146b754] {
-  margin-top: 20px;
-  flex: 1;
-  color: #384e99;
-  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  padding: 0.625rem 0;
+  color: #2f59b9;
 }
 .loan .loan-money .loan-content .money .str[data-v-6146b754] {
-  flex: 1;
-  font-size: 11px;
-  color: #ccc;
+  width: 80%;
+  font-size: 0.78125rem;
+  margin: 0 auto;
+  font-size: 0.78125rem;
+  color: #b8b9bb;
 }
 .loan .loan-money .loan-content .percentage[data-v-6146b754] {
-  width: 30%;
-  height: 100%;
-}
-.loan .loan-money .loan-content .percentage uni-view[data-v-6146b754] {
-  margin-left: 20px;
+  width: 22%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0.625rem;
 }
 .loan .loan-money .loan-content .percentage .num[data-v-6146b754] {
-  margin-top: 20px;
-  flex: 1;
-  color: #384e99;
-  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.09375rem;
+  padding: 0.625rem 0;
+  color: #2f59b9;
 }
 .loan .loan-money .loan-content .percentage .str[data-v-6146b754] {
-  flex: 1;
-  font-size: 11px;
-  color: #ccc;
+  width: 80%;
+  font-size: 0.78125rem;
+  margin: 0 auto;
+  font-size: 0.78125rem;
+  color: #b8b9bb;
 }
 .loan .loan-money .loan-content .btn[data-v-6146b754] {
   flex: 1;
-  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.loan .loan-money .loan-content .btn .bon[data-v-6146b754] {
-  width: 70%;
-  height: 50%;
-  border: 1px solid;
-  border-radius: 20px;
-  background-color: #4876de;
-  text-align: center;
-  line-height: 35px;
-  color: white;
-  font-weight: "黑体";
+.loan .loan-money .loan-content .btn .botton[data-v-6146b754] {
+  width: 5.625rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4c79de;
+  border-radius: 1.25rem;
+  color: #f9fafc;
+  font-size: 0.875rem;
 }
 /**
  * 这里是uni-app内置的常用样式变量
@@ -1060,47 +1064,46 @@
   height: 40%;
   display: flex;
   align-items: center;
-  font-size: 0.75rem;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning[data-v-1cf27b2a] {
-  width: 15%;
-  height: 100%;
+  width: 20%;
   display: flex;
-  margin: 0 2%;
+  align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .images[data-v-1cf27b2a] {
-  flex: 1;
-  height: 100%;
-  text-align: center;
-  line-height: 45px;
+  align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .images uni-image[data-v-1cf27b2a] {
-  width: 90%;
-  height: 80%;
-  color: white;
+  width: 2.03125rem;
+  height: 1.71875rem;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .text[data-v-1cf27b2a] {
-  width: 50%;
+  flex: 1;
   height: 100%;
-  line-height: 30px;
   color: white;
 }
 .Home .navbar-title .navigationBar .navigationBar-search[data-v-1cf27b2a] {
   flex: 1;
-  opacity: 0.3;
+  opacity: 0.2;
   justify-items: center;
+  align-self: center;
+}
+.Home .navbar-title .navigationBar .navigationBar-search uni-search-bar[data-v-1cf27b2a] {
+  display: flex;
   align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc[data-v-1cf27b2a] {
   display: flex;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc .ioc_[data-v-1cf27b2a] {
-  width: 30px;
-  height: 30px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc .ioc_ uni-image[data-v-1cf27b2a] {
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
 }
 .Home .Maxbanner[data-v-1cf27b2a] {
   width: 100%;
@@ -1138,7 +1141,7 @@
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
-  font-size: 0.65625rem;
+  font-size: 0.625rem;
   font-family: "粗体";
   margin-top: 15%;
 }
@@ -1152,11 +1155,14 @@
   height: 82%;
 }
 .Home .broadcast[data-v-1cf27b2a] {
-  width: 100%;
+  width: 95%;
   height: 40px;
   background-color: #e2edf9;
+  margin: 0 auto;
   margin-top: 5%;
   position: relative;
+  border-radius: 0.3125rem;
+  overflow: hidden;
 }
 .Home .broadcast .iocn[data-v-1cf27b2a] {
   aspect-ratio: 1/1;
@@ -1179,12 +1185,12 @@
   z-index: 998;
   top: 0;
   right: 0;
-  border-radius: 12px 0 0 0;
+  border-radius: 0.625rem 0 0 0;
 }
 .Home .broadcast .Text .text[data-v-1cf27b2a] {
   width: 85%;
   height: 100%;
-  font-size: 14px;
+  font-size: 0.78125rem;
   margin-left: 5%;
   line-height: 2.5rem;
 }
@@ -1194,7 +1200,7 @@
   aspect-ratio: 1/1;
   background: url("../../static/ioc/broadcast/icon_next_messagenew.png") no-repeat;
   background-position: center;
-  background-size: 15px;
+  background-size: 0.9375rem;
 }
 .Home .min_banner[data-v-1cf27b2a] {
   width: 100%;
@@ -1203,8 +1209,8 @@
 }
 .Home .min_banner uni-image[data-v-1cf27b2a] {
   width: 95%;
-  margin: 0 10px;
+  margin: 0 0.625rem;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   aspect-ratio: 1/3;
 }

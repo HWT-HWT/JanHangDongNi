@@ -33,21 +33,36 @@
 		<view v-else> 
 			<view class="Details">
 				<view class="name">
-					个人经营抵押快贷(44...
+					<view class="text">
+						个人经营抵押快贷(44...
+					</view>
+					<view class="ioc">
+						<image class="ioc-image" src="../../static/myiocn/sanjiaoxing.png" mode=""></image>
+					</view>
 				</view>
 				
 				<view class="Repayment">
-					还款
+					<view class="text">
+						还款
+					</view>
+					<view class="ioc">
+						<image class="ioc-image" src="../../static/myiocn/sanjiaoxing.png" mode=""></image>
+					</view>
 				</view>
 				
 				<view class="Day">
-					近6个月
+					<view class="text">
+						近6个月
+					</view>
+					<view class="ioc">
+						<image class="ioc-image" src="../../static/myiocn/sanjiaoxing.png" mode=""></image>
+					</view>
 				</view>
 			</view>
 			
 			<view class="DetailsDay" v-for="item in DetailsDay " :key="item" @click="Disbursement(item)">
 				<view class="ioc">
-					<image class="ioc-image" style="width: 7px; height: 7px;" src="../../static/myiocn/ic_circle_msg.png" mode=""></image>
+					<image class="ioc-image" style="width: 18px; height: 18px;" src="../../static/myiocn/green.png" mode=""></image>
 				</view>
 				<view class="DayHk">
 					<view class="DayHk-day">
@@ -90,45 +105,6 @@
 				Inquire:['余额','我的申请','明细'],
 				index:true,
 				DetailsDay:[
-					{	
-						data:'2024/10/21',
-						money:'2,030.00',
-						name:'还款',
-						week: '星期一',
-						list:{
-							"还款时间":'2024/10/21 15:17:03',
-							'贷款种类':'个人经营抵押贷款',
-							'凭证号':'1081970011724224622779879',
-							'贷款账号':'4400***9724',
-							'还款账号':''
-						},
-					},
-					{
-						data:'2024/09/21 ',
-						money:'2,030.00',
-						name:'还款',
-						week: '星期六',
-						list:{
-							"还款时间":'2024/09/21 15:17:03',
-							'贷款种类':'个人经营抵押贷款',
-							'凭证号':'1081970011724224622779879',
-							'贷款账号':'4400***9724',
-							'还款账号':''
-						},
-					},
-					{
-						data:'2024/08/21 ',
-						money:'2,030.00',
-						name:'还款',
-						week: '星期三',
-						list:{
-							"还款时间":'2024/08/21 15:17:03',
-							'贷款种类':'个人经营抵押贷款',
-							'凭证号':'1081970011724224622779879',
-							'贷款账号':'4400***9724',
-							'还款账号':'2617003320107801311'
-						},
-					},
 					{
 						data:'2024/07/24 ',
 						money:'700,000.00',
@@ -142,6 +118,45 @@
 						},
 						istrue:true
 					},
+					{
+						data:'2024/08/21 ',
+						money:'1894.66',
+						name:'还款',
+						week: '星期三',
+						list:{
+							"还款时间":'2024/08/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':'2617003320107801311'
+						},
+					},
+					{
+						data:'2024/09/21 ',
+						money:'2,030.17',
+						name:'还款',
+						week: '星期六',
+						list:{
+							"还款时间":'2024/09/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':''
+						},
+					},
+					{	
+						data:'2024/10/21',
+						money:'2,030.17',
+						name:'还款',
+						week: '星期一',
+						list:{
+							"还款时间":'2024/10/21 15:17:03',
+							'贷款种类':'个人经营抵押贷款',
+							'凭证号':'1081970011724224622779879',
+							'贷款账号':'4400***9724',
+							'还款账号':''
+						},
+					},
 				]
 			};
 		},
@@ -153,12 +168,21 @@
 				index === 2 ? this.index = false : this.index = true
 			},
 			Disbursement(item){
-				wx.clearStorageSync();
-				wx.setStorageSync('DetailsDay',item)
-				// #ifdef APP
-				localStorage.removeItem('DetailsDay');  
-				localStorage.setItem('DetailsDay',item)
-				// #endif
+					// uni.setStorage({
+					// 	key: 'DetailsDay', // 存储数据的键名  
+					// 	data: JSON.stringify(item), // 需要存储的数据，这里是一个对象，所以使用JSON.stringify进行序列化  
+					// 	success: function () {  
+					// 		console.log('数据存储成功');  
+					// 	},  
+					// 	fail: function (err) {  
+					// 		console.error('数据存储失败', err);  
+					// 	}  
+					// });
+					
+				uni.clearStorageSync();
+			
+				uni.setStorageSync('DetailsDay',item)
+				
 				uni.navigateTo({
 					url:'/pages/Disbursement/Disbursement'
 				})
@@ -197,6 +221,17 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				.ioc{
+					width: 10px;
+					height: 28%;
+					display: flex;
+					align-items: center;
+					margin: 0 1px;
+					.ioc-image{
+						width: 100%;
+						height: 100%;
+					}
+				}
 			}
 			.Repayment{
 				width: 20%;
@@ -208,6 +243,17 @@
 				justify-content: center;
 				align-items: center;
 				margin-left:10px;
+				.ioc{
+					width: 10px;
+					height: 28%;
+					display: flex;
+					align-items: center;
+					margin: 0 2px;
+					.ioc-image{
+						width: 100%;
+						height: 100%;
+					}
+				}
 			}
 			.Day{
 				width: 25%;
@@ -219,6 +265,17 @@
 				justify-content: center;
 				align-items: center;
 				margin-left:10px;
+				.ioc{
+					width: 10px;
+					height: 28%;
+					display: flex;
+					align-items: center;
+					margin: 0 1px;
+					.ioc-image{
+						width: 100%;
+						height: 100%;
+					}
+				}
 			}
 		}
 		.DetailsDay{
@@ -229,6 +286,7 @@
 			font-size: 12px;
 			line-height: 20px;
 			margin-bottom: 2px;
+			// border: 1px solid;
 			.ioc{
 				width: 10%;
 				height: 100%;

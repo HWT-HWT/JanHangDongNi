@@ -89,9 +89,9 @@
   align-items: center;
 }
 .Disbursement .Expenditure-details .Expenditure-details-list .name {
-  width: 50%;
+  width: 40%;
   height: 100%;
-  font-size: 14px;
+  font-size: 28rpx;
   display: flex;
   align-items: center;
   color: #a2a2a2;
@@ -99,7 +99,7 @@
 .Disbursement .Expenditure-details .Expenditure-details-list .content {
   width: 50%;
   height: 100%;
-  font-size: 13px;
+  font-size: 26rpx;
   display: flex;
   align-items: center;
 }

@@ -1,7 +1,6 @@
 <template>
 	<view class="Disbursement">
 		<NavbarTitleVue>支出明细</NavbarTitleVue>
-		
 			<view class="Disbursement-title" >
 				<view class="title">
 					{{DetailsDay.name}}金额
@@ -38,7 +37,7 @@
 			</view>
 			
 			<view class="Expenditure-details">
-				<view class="Expenditure-details-list" v-for="(index,vlaue) in DetailsDay.list"  :key="item">
+				<view class="Expenditure-details-list" v-for="(index,vlaue) in DetailsDay.list"  :key="vlaue">
 					<view class="name">
 						{{vlaue}}
 					</view>
@@ -66,8 +65,8 @@ import NavbarTitleVue from '../../components/NavbarTitle.vue';
 			NavbarTitleVue
 		},
 		created() {
-			this.DetailsDay = wx.getStorageSync('DetailsDay'); 
-			console.log(this.DetailsDay.data);
+			// this.DetailsDay = JSON.parse(localStorage.getItem('DetailsDay'))
+			this.DetailsDay = uni.getStorageSync('DetailsDay')
 		}
 	}
 </script>
@@ -148,10 +147,10 @@ import NavbarTitleVue from '../../components/NavbarTitle.vue';
 			padding:10px;
 			align-items: center;
 			.name{
-				width: 50%;
+				width: 40%;
 				height: 100%;
 				// border: 1px solid;
-				font-size: 14px;
+				font-size: 28rpx;
 				display: flex;
 				align-items: center;
 				color: #a2a2a2;
@@ -160,7 +159,7 @@ import NavbarTitleVue from '../../components/NavbarTitle.vue';
 				width: 50%;
 				height: 100%;
 				// border: 1px solid;
-				font-size: 13px;
+				font-size: 26rpx;
 				display: flex;
 				align-items: center;
 			}

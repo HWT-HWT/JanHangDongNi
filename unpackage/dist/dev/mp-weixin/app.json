@@ -2,11 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/my/my",
-    "pages/Enterprise/Enterprise",
+    "pages/loan/loan",
     "pages/message/message",
     "pages/MyAccount/MyAccount",
-    "pages/loan/loan",
-    "pages/Disbursement/Disbursement"
+    "pages/Disbursement/Disbursement",
+    "pages/Enterprise/Enterprise"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -22,14 +22,14 @@
       {
         "text": "首页",
         "pagePath": "pages/index/index",
-        "iconPath": "./static/ioc/NavBar/home_nor.png",
-        "selectedIconPath": "./static/ioc/NavBar/icon_main_app.png"
+        "selectedIconPath": "static/ioc/NavBar/icon_main_app.png",
+        "iconPath": "static/ioc/NavBar/home_nor.png"
       },
       {
         "text": "我的",
         "pagePath": "pages/my/my",
-        "iconPath": "./static/ioc/NavBar/loan.png",
-        "selectedIconPath": "./static/ioc/NavBar/loan_avtive.png"
+        "selectedIconPath": "/static/ioc/NavBar/loan_avtive.png",
+        "iconPath": "/static/ioc/NavBar/loan.png"
       }
     ]
   },

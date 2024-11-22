@@ -205,7 +205,7 @@
 }
 .SetMy .SetMyHead[data-v-2f1ef635] {
   width: 100%;
-  aspect-ratio: 2/1.5;
+  aspect-ratio: 2/1.4;
 }
 .SetMy .SetMyHead uni-image[data-v-2f1ef635] {
   width: 100%;
@@ -260,8 +260,8 @@
   margin-left: 1.25rem;
 }
 .SetMy .SetMyHead .Information .Head .Head-image[data-v-2f1ef635] {
-  width: 100%;
-  height: 100%;
+  width: 4.6875rem;
+  height: 4.6875rem;
 }
 .SetMy .SetMyHead .Information .name[data-v-2f1ef635] {
   flex: 1;

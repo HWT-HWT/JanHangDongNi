@@ -11,44 +11,51 @@
 			"style" : 
 			{
 				"navigationBarTitleText" : "我的"
-				
-			}
-		},
-		{
-			"path" : "pages/Enterprise/Enterprise",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
-			}
-		},
-		{
-			"path" : "pages/message/message",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
-			}
-		},
-		{
-			"path" : "pages/MyAccount/MyAccount",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
 			}
 		},
 		{
 			"path" : "pages/loan/loan",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/message/message",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/MyAccount/MyAccount",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
 			}
 		},
 		{
 			"path" : "pages/Disbursement/Disbursement",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/Enterprise/Enterprise",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
 			}
 		}
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -65,14 +72,16 @@
 			{
 				"text": "首页",
 				"pagePath": "pages/index/index",
-				"iconPath": "./static/ioc/NavBar/home_nor.png",
-				"selectedIconPath": "./static/ioc/NavBar/icon_main_app.png"
+				"selectedIconPath": "static/ioc/NavBar/icon_main_app.png",
+				"iconPath": "static/ioc/NavBar/home_nor.png"
+				
 			},
 			{
 				"text": "我的",
 				"pagePath": "pages/my/my",
-				"iconPath": "./static/ioc/NavBar/loan.png",
-				"selectedIconPath": "./static/ioc/NavBar/loan_avtive.png"
+				"selectedIconPath": "/static/ioc/NavBar/loan_avtive.png",
+				"iconPath": "/static/ioc/NavBar/loan.png"
+				
 			}
 		]
 	},

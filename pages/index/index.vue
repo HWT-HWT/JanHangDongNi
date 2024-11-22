@@ -18,7 +18,7 @@
 					</view>
 				</view>
 				<view class="navigationBar-search">
-					<uni-search-bar radius="5" placeholder="代发工资" clearButton="always" cancelButton="none" bgColor="#000"  />
+					<uni-search-bar radius="5" placeholder="代发工资"  clearButton="none" cancelButton="none" bgColor="#000"  />
 				</view>
 				
 				<view class="navigationBar-ioc">
@@ -30,7 +30,7 @@
 		</view>
 		
 		<view class="Maxbanner">
-			<image src="../../static/banner/img_plate.gif" mode=""></image>
+			<image src="../../static/banner/img_plate.gif" mode="widthFix"></image>
 			<view class="btnBanner">
 				<text>测测贷款额度</text>
 			</view>
@@ -53,7 +53,6 @@
 				</view>
 				<view class="Text_iocn">
 				</view>
-				
 			</view>
 		</view>
 		
@@ -105,7 +104,9 @@
 			loan,
 			Strategy
 		},
-
+		onLoad() {
+			
+		}
 	}
 	
 </script>
@@ -130,48 +131,43 @@
 				height: 40%;
 				display: flex;
 				align-items: center;
-				font-size: 24rpx;
 				.navigationBar-positioning{
-					width: 15%;
-					height: 100%;
+					width: 20%;
 					display: flex;
-					margin: 0 2%;
+					align-items: center;
 					.images{
-						flex: 1;
-						height: 100%;
-						text-align: center;
-						line-height: 45px;
+						align-items: center;
 						image{
-							width: 90%;
-							height: 80%;
-							color: white;
+							width: 65rpx;
+							height: 55rpx;
 						}
 					}
 					.text{	
-						width: 50%;
+						flex: 1;
 						height: 100%;
-						// text-align: left;
-						// margin-left: 10px;
-						// border: 1px solid;
-						line-height:30px;
 						color: white;
-						// padding-left: 20px;
 					}
 				}
 				.navigationBar-search{
 					flex: 1;
-					opacity: 0.3;					
+					opacity: 0.2;					
 					justify-items: center;
-					align-items: center;
+					align-self: center;
+					uni-search-bar{
+						display: flex;
+						align-items: center;
+					}
 				}
 				.navigationBar-ioc{
 					display: flex;
 					.ioc_{
-						width: 30px;
-						height: 30px;
+						display: flex;
+						align-items: center;
+						width: 25px;
+						height: 25px;
 						image{
-							width: 80%;
-							height: 80%;
+							width: 85%;
+							height: 85%;
 						}
 					}
 				}
@@ -179,6 +175,7 @@
 		}
 		.Maxbanner{
 			width: 100%;
+			// height: 300rpx;
 			aspect-ratio: 2/1.1;
 			z-index: 998;
 			position: relative;
@@ -214,7 +211,7 @@
 			padding: 0 15px;
 			margin: 0 auto;
 			text-align: center;
-			font-size: 21rpx;
+			font-size: 20rpx;
 			font-family:'粗体' ;
 			margin-top: 15%;
 			.operation_box{
@@ -230,18 +227,18 @@
 			}
 		}
 		.broadcast{
-			width: 100%;
+			width: 95%;
 			height: 40px;
 			background-color: #e2edf9;
+			margin: 0 auto;
 			margin-top: 5%;
 			position: relative;
-			// margin: 0 auto;
+			border-radius: 10rpx;
+			overflow: hidden;
 			.iocn{
-				// width: 100%;
 				aspect-ratio: 1/1;
 				height: 100%;
 				background-color: #e2edf9;
-				// border: 1px solid 	;
 				border-radius: 0 0 12px 0;
 				justify-content: center;
 				image{
@@ -255,27 +252,25 @@
 				height: 100%;
 				background-color: #f3f8fd;
 				display: flex;
-				// border: 1px solid;
 				position:absolute;
 				z-index: 998;
 				top: 0;
 				right: 0;
-				border-radius: 12px 0 0 0 ;
+				border-radius: 20rpx 0 0 0 ;
 				.text{
 					width: 85%;
 					height: 100%;
-					font-size: 14px;
+					font-size: 25rpx;
 					margin-left: 5%;
 					line-height: 2.5rem;
 				}
 				.Text_iocn{
 					flex: 1;
-					// border-left: 1px solid;
 					border-color: #ccc;
 					aspect-ratio: 1/1;
 					background: url('../../static/ioc/broadcast/icon_next_messagenew.png') no-repeat;
 					background-position: center;
-					background-size: 15px;
+					background-size: 30rpx;
 				}
 			}
 		}
@@ -285,9 +280,9 @@
 			margin-top: 5%;
 			image{
 				width: 95%;
-				margin: 0 10px;
+				margin: 0 20rpx;
 				height: 100%;
-				border-radius: 10px;
+				border-radius: 20rpx;
 				aspect-ratio: 1/3;
 			}
 		}
