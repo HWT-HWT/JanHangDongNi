@@ -14,4 +14,8 @@
 
 <style>
 	/*每个页面公共css */
+	image{
+		width: 50rpx;
+		height: 50rpx;
+	}
 </style>

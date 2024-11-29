@@ -27,10 +27,11 @@
   width: 100%;
   overflow: hidden;
   background-color: #f7f9ff;
+  height: 100vh;
 }
 .SetMy .SetMyHead.data-v-2f1ef635 {
   width: 100%;
-  aspect-ratio: 2/1.5;
+  aspect-ratio: 2/1.4;
 }
 .SetMy .SetMyHead image.data-v-2f1ef635 {
   width: 100%;
@@ -77,6 +78,7 @@
 .SetMy .SetMyHead .Information.data-v-2f1ef635 {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 .SetMy .SetMyHead .Information .Head.data-v-2f1ef635 {
   width: 18%;
@@ -85,13 +87,12 @@
   margin-left: 40rpx;
 }
 .SetMy .SetMyHead .Information .Head .Head-image.data-v-2f1ef635 {
-  width: 100%;
-  height: 100%;
+  width: 150rpx;
+  height: 150rpx;
 }
 .SetMy .SetMyHead .Information .name.data-v-2f1ef635 {
   flex: 1;
-  margin-left: 10px;
-  margin-top: 40rpx;
+  margin-left: 20px;
   height: 100%;
   color: white;
   font-family: "黑体";
@@ -129,7 +130,6 @@
 }
 .SetMy .SetMyBody.data-v-2f1ef635 {
   width: 100%;
-  height: 500px;
   background: #f7f9ff;
   margin-top: 20px;
 }

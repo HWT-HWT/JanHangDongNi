@@ -1,32 +1,41 @@
 <template>
 	<view class="SetMy">
 		<view class="SetMyHead">
-			
-			<image src="../../static/myiocn/Topbg.png"></image>
+			<image src="../../static/myiocn/loginTopbg.png" v-if="!IsLogin" @click="Gologin" ></image>
+
+			<image style="" src="../../static/myiocn/Topbg-1.png" v-else></image>
 			
 			<view class="SetMyHeadTitle">
-				<view style="width: 100%; height: 40px;">
+				<view style="width: 100%; height: 40px;" >
 					
 				</view>
 				
 				<view class="HeadTitle">
-					
 					<view class="title">
-						<view style="margin: 0 0 0 350rpx ; font-size: 36rpx;">
-							我的
-						</view>
+						我的
 					</view>
-					<view class="iocn">
+					<view class="iocn" @click="quit">
 						<image  src="../../static/myiocn/ic_setting.png" mode="" ></image>
 					</view>
 				</view>
 				
-				<view class="Information">
+				
+				
+				<view class="Information" @click="Gologin" v-if="!IsLogin">
 					<view class="Head">
 						<image class="Head-image" src="../../static/myiocn/head_nor.png" mode=""></image>
 					</view>
 					<view class="name">
-						<text>*华平</text>
+						<text>欢迎登录</text>
+					</view>
+				</view>
+				
+				<view class="Information"  v-else >
+					<view class="Head">
+						<image class="Head-image" src="../../static/myiocn/head_nor.png" mode=""></image>
+					</view>
+					<view class="name">
+						<text>*岳鹏</text>
 						<view class="provePhone">
 							<view class="prove">
 								<view class="ioc_">
@@ -37,11 +46,15 @@
 								</view>
 							</view>
 							<view class="Phone">
-								152***0646
+								135***4922
 							</view>
 						</view>
 					</view>
 				</view>
+				
+				
+				
+				
 			</view>
 		</view>
 		<view class="SetMyBody">
@@ -75,7 +88,7 @@
 			
 			<view class="popup-conten">
 				<view class="popup-name">
-					广州友福贸易有限公司
+					广州市智成毅创商务有限公司
 				</view>
 				<view class="popup-ioc">
 					<image class="popup-image" src="../../static/myiocn/direction_right_icon.png" mode="" ></image>
@@ -88,6 +101,7 @@
 <script>
 	import NavbarTitle from '@/components/NavbarTitle.vue';
 	import MyList from '@/components/My.vue'
+	import {gologin} from '@/components/login.js'
 	export default {
 		data() {
 			return {
@@ -116,11 +130,16 @@
 						ioc:'../static/myiocn/ic_us.png',
 						name:'关于我们',
 					},
-					]
+				],
+				IsLogin:'',
 			};
 		},
 		components:{
 			MyList
+		},
+		onLoad() {
+			this.IsLogin = uni.getStorageSync('account')
+			console.log(this.IsLogin);
 		},
 		methods:{
 			open(){
@@ -131,10 +150,17 @@
 			},
 			
 			account(){
-				// console.log(123);
+				gologin('/pages/MyAccount/MyAccount')
+			},
+			Gologin(){
 				uni.navigateTo({
-					url:'/pages/MyAccount/MyAccount'
+					url:"/pages/login/login"
 				})
+			},
+			quit(){
+				console.log(123);
+				uni.removeStorageSync('account')
+				gologin('')
 			}
 		}
 		
@@ -146,6 +172,7 @@
 		width: 100%;
 		overflow: hidden;
 		background-color: #f7f9ff;
+		height: 100vh;
 		.SetMyHead{
 			width: 100%;
 			aspect-ratio: 2/1.4;
@@ -154,42 +181,46 @@
 				height: 100%;
 			}
 			button{
-				width: 100px;
+				width: 200rpx;
 				height: 100%;
 				border:none;
-				border-radius: 50px;
-				height: 35px; 
+				border-radius: 100rpx;
+				height: 70rpx; 
 				background: url('../../static/myiocn/btn_dlzc.png') no-repeat;
-				box-shadow:0 4px 8px rgba(0, 0, 0, 0.3); ;
+				box-shadow:0 8rpx 16rpx rgba(0, 0, 0, 0.3); ;
 				background-size: 100%;
-				font-size: 13px;
+				font-size: 28rpx;
 				margin-top: -150rpx;
 				color: #6382c0;
 				margin-left: 450rpx;
 			}
 			.SetMyHeadTitle{
 				width: 100%;
-				height: 50px;
+				height: 100rpx;
 				position:absolute;
 				top: 0%;
 				.HeadTitle{
 					width: 100%;
-					// border:1px solid;
-					height: 50px;
+					height: 100rpx;
 					display: flex;
 					.title{
 						flex: 1;
 						display: flex;
 						align-items: center;
 						color: white;
-						font-size: 28rpx;
-						
+						font-size: 35rpx;
+						justify-content: center;
+						margin-left:50rpx;
 					}
 					.iocn{
-						width: 25px;
-						height: 20px;
-						margin-right: 20px;
-						margin-top: 15px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						image{
+							width: 45rpx;
+							height: 40rpx;
+							margin: 0 10rpx;
+						}
 					}
 					
 				}
@@ -198,9 +229,10 @@
 			.Information{
 				width: 100%;
 				display: flex;
+				align-items: center;
 				.Head{
-					width: 18%;
-					aspect-ratio: 1/1;
+					width: 150rpx;
+					height: 150rpx;
 					border-radius: 100%;
 					margin-left: 40rpx;
 					.Head-image{
@@ -210,13 +242,12 @@
 				}
 				.name{
 					flex: 1;
-					margin-left: 10px;
-					margin-top: 40rpx;
+					margin-left: 40rpx;
 					height: 100%;
 					color: white;
 					font-family: '黑体';
-					font-size: 36rpx	;
-					// border:1px solid;
+					font-size: 36rpx;
+					// border: 1px solid;
 					.provePhone{
 						width: 100%;
 						margin-top: 20rpx;
@@ -253,7 +284,6 @@
 		}
 		.SetMyBody{
 			width: 100%;
-			height:500px;
 			background: #f7f9ff;
 			margin-top: 20px;
 			.title{

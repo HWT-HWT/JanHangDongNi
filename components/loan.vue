@@ -11,7 +11,6 @@
 				</view>
 			</view>
 			
-			
 			<view class="loan-content">
 				<view class="money">
 					<view class="num">

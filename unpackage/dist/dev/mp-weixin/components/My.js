@@ -1,5 +1,6 @@
 "use strict";
 const common_vendor = require("../common/vendor.js");
+const components_login = require("./login.js");
 const common_assets = require("../common/assets.js");
 const _sfc_main = {
   name: "My",
@@ -13,9 +14,11 @@ const _sfc_main = {
   },
   methods: {
     change(id) {
-      id === 1 ? common_vendor.index.navigateTo({ url: "/pages/Enterprise/Enterprise" }) : "";
-      id === 2 ? this.$emit("open") : "";
-      id === 3 ? common_vendor.index.navigateTo({ url: "/pages/loan/loan" }) : "";
+      id === 1 ? components_login.gologin("/pages/Enterprise/Enterprise") : "";
+      if (common_vendor.index.getStorageSync("account")) {
+        id === 2 ? this.$emit("open") : "";
+      }
+      id === 3 ? components_login.gologin("/pages/loan/loan") : "";
     }
   }
 };
@@ -29,7 +32,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         d: common_vendor.o(($event) => $options.change(item.NvaGo), index)
       };
     }),
-    b: common_assets._imports_0$3
+    b: common_assets._imports_0$4
   };
 }
 const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-5e0d8f88"]]);

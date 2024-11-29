@@ -140,7 +140,7 @@
   width: 90%;
   height: 60px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 0.625rem;
   display: flex;
   background-color: #ffffff;
   border-radius: 10px;
@@ -164,7 +164,6 @@
 }
 .list .point[data-v-5e0d8f88] {
   width: 10%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,6 +201,7 @@
   width: 100%;
   overflow: hidden;
   background-color: #f7f9ff;
+  height: 100vh;
 }
 .SetMy .SetMyHead[data-v-2f1ef635] {
   width: 100%;
@@ -212,28 +212,28 @@
   height: 100%;
 }
 .SetMy .SetMyHead uni-button[data-v-2f1ef635] {
-  width: 100px;
+  width: 6.25rem;
   height: 100%;
   border: none;
-  border-radius: 50px;
-  height: 35px;
+  border-radius: 3.125rem;
+  height: 2.1875rem;
   background: url("../../static/myiocn/btn_dlzc.png") no-repeat;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
   background-size: 100%;
-  font-size: 13px;
+  font-size: 0.875rem;
   margin-top: -4.6875rem;
   color: #6382c0;
   margin-left: 14.0625rem;
 }
 .SetMy .SetMyHead .SetMyHeadTitle[data-v-2f1ef635] {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   position: absolute;
   top: 0%;
 }
 .SetMy .SetMyHead .SetMyHeadTitle .HeadTitle[data-v-2f1ef635] {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   display: flex;
 }
 .SetMy .SetMyHead .SetMyHeadTitle .HeadTitle .title[data-v-2f1ef635] {
@@ -241,21 +241,28 @@
   display: flex;
   align-items: center;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.09375rem;
+  justify-content: center;
+  margin-left: 1.5625rem;
 }
 .SetMy .SetMyHead .SetMyHeadTitle .HeadTitle .iocn[data-v-2f1ef635] {
-  width: 25px;
-  height: 20px;
-  margin-right: 20px;
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SetMy .SetMyHead .SetMyHeadTitle .HeadTitle .iocn uni-image[data-v-2f1ef635] {
+  width: 1.40625rem;
+  height: 1.25rem;
+  margin: 0 0.3125rem;
 }
 .SetMy .SetMyHead .Information[data-v-2f1ef635] {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 .SetMy .SetMyHead .Information .Head[data-v-2f1ef635] {
-  width: 18%;
-  aspect-ratio: 1/1;
+  width: 4.6875rem;
+  height: 4.6875rem;
   border-radius: 100%;
   margin-left: 1.25rem;
 }
@@ -265,8 +272,7 @@
 }
 .SetMy .SetMyHead .Information .name[data-v-2f1ef635] {
   flex: 1;
-  margin-left: 10px;
-  margin-top: 1.25rem;
+  margin-left: 1.25rem;
   height: 100%;
   color: white;
   font-family: "黑体";
@@ -304,7 +310,6 @@
 }
 .SetMy .SetMyBody[data-v-2f1ef635] {
   width: 100%;
-  height: 500px;
   background: #f7f9ff;
   margin-top: 20px;
 }

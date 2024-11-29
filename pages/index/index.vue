@@ -1,5 +1,5 @@
 <template>
-	<view class="Home">
+	<view class="Home" @click="isLgin">
 		
 		<view style="width: 100%; height: 100px;">
 			
@@ -13,7 +13,10 @@
 					<view class="images">
 						<image src="../../static/SVG/positioning.svg"></image>
 					</view>
-					<view class="text">
+					<view class="text" v-if="!isLogin" style="margin-top: -10rpx;">
+						<text>--</text>
+					</view>
+					<view class="text" style="margin-top: -10rpx;" v-else>
 						<text>广州</text>
 					</view>
 				</view>
@@ -32,14 +35,16 @@
 		<view class="Maxbanner">
 			<image src="../../static/banner/img_plate.gif" mode="widthFix"></image>
 			<view class="btnBanner">
-				<text>测测贷款额度</text>
+				<text>提升贷款额度</text>
 			</view>
 		</view>
-		
+		<shake></shake>
 		<view class="operation">
 			<view class="operation_box" v-for="(item,index) in 10" :key="item">
 				<image :src='`../../static/ioc/bar/iocn_${index+1}.png`' mode=""></image>
-				<text>{{operationBar[index]}}</text>
+				<view>
+					<text>{{operationBar[index]}}</text>
+				</view>
 			</view>
 		</view>
 		
@@ -84,6 +89,8 @@
 	import navTab from '@/components/navTab.vue'
 	import loan from '@/components/loan.vue'
 	import Strategy from '@/components/Strategy.vue'
+	import {gologin} from '@/components/login.js'
+	import shake  from '@/components/shake.vue' 
 	export default {
 		data() {
 			return {
@@ -95,17 +102,24 @@
 					{name:'质押快贷',title:'全流程线上办理', money:'3,000,000' ,percentage:'3.10%'},
 					{name:'平台快贷',title:'数据增信', money:'3,000,000' ,percentage:'3.85%'}
 				],
-				Strategy:['看视频','读攻略']
+				Strategy:['看视频','读攻略'],
+				isLogin:''
 			};
 		},
 		 components: {  
 		    NavbarTitle,
 			navTab,
 			loan,
-			Strategy
+			Strategy,
+			shake,
 		},
-		onLoad() {
-			
+		created() {
+			this.isLogin = uni.getStorageSync("account")
+		},
+		methods:{
+			isLgin(){
+				gologin('page/index/index')
+			}
 		}
 	}
 	
@@ -196,9 +210,8 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				font-weight: 600;
 				color: #d67c3b;
-				font-size: 28rpx;
+				font-size: 30rpx;
 				
 			}
 		}

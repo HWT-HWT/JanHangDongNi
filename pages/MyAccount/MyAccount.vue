@@ -15,39 +15,40 @@
 			</view>
 			
 			<view class="account-Bank">
-				<view class="account-Bank-image">
+				<view class="account-Bank-image" >
 					
 					<image class="Bank-image" src="../../static/myiocn/Snipaste_2024-10-30_23-42-57.png" mode=""></image>
 					
 					<view class="account-Bank-text">
 						
 						<view class="Bank-text-title">
-							建行账号(1321) <span class="text-title-span">查看账号</span>
+							建行账号(2333) <span class="text-title-span">查看账号</span>
 						</view>
 						
 						<view class="text-title-money">
 							<view class="balance">
 								<view>余额（元）</view>
-								<view>81.95</view>
+								<view>0.00</view>
 							</view>
 							<view class="balance">
 								<view>可用余额（元）</view>
-								<view>81.95</view>
+								<view>0.00</view>
 							</view>
 						</view>
 						
-						<view style="line-height: 40rpx;">
-							<p class="" style="font-size: 20rpx; color: #b1b1b4;">
+						<view style="line-height: 40rpx; width: 100%;">
+							<p class="" style="font-size: 25rpx; color: #b1b1b4;">
 								开户网点
 							</p>
 							<p class="" style="font-size: 20rpx; color: #757578;">
-								中国建设银行股份有限公司广州南沙气候支部
+								中国建设银行股份有限公司广州先烈东路支行
 							</p>
 						</view>
 						
-						<view style="width: 100%; text-align: center; font-size: 28rpx;margin-top: 50rpx; font-family: '黑体';">
-							收入分析 <image style="width: 15rpx; height: 20rpx;" src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
-						</view>
+					</view>
+					
+					<view style="position:absolute;bottom: 5%; left: 40%; z-index: 999; font-size: 25rpx; display: flex; align-items: center;">
+						收入分析 <image style="width: 15rpx; height: 20rpx; margin-left: 5rpx;" src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>
 					</view>
 				</view>
 			</view>
@@ -110,7 +111,6 @@
 				height: 100%;
 				margin: 0 auto;
 				overflow: hidden;
-				// border: 1px solid;
 				display: flex;
 				flex-wrap: wrap;
 				position: relative;

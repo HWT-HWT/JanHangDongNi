@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wu-icon": "../../../wu-icon/components/wu-icon/wu-icon"
+  }
+}

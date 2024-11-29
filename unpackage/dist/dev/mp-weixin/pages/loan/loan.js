@@ -2,6 +2,7 @@
 const common_vendor = require("../../common/vendor.js");
 const common_assets = require("../../common/assets.js");
 const NavbarTitle = () => "../../components/NavbarTitle.js";
+const classification = () => "../../components/classification.js";
 const _sfc_main = {
   data() {
     return {
@@ -64,7 +65,8 @@ const _sfc_main = {
     };
   },
   components: {
-    NavbarTitle
+    NavbarTitle,
+    classification
   },
   methods: {
     secondClick(index) {
@@ -82,7 +84,8 @@ const _sfc_main = {
 if (!Array) {
   const _component_NavbarTitle = common_vendor.resolveComponent("NavbarTitle");
   const _easycom_z_tabs2 = common_vendor.resolveComponent("z-tabs");
-  (_component_NavbarTitle + _easycom_z_tabs2)();
+  const _component_classification = common_vendor.resolveComponent("classification");
+  (_component_NavbarTitle + _easycom_z_tabs2 + _component_classification)();
 }
 const _easycom_z_tabs = () => "../../uni_modules/z-tabs/components/z-tabs/z-tabs.js";
 if (!Math) {
@@ -102,19 +105,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   }, $data.index ? {} : {
     d: common_assets._imports_0$2,
     e: common_assets._imports_0$2,
-    f: common_assets._imports_0$2,
-    g: common_vendor.f($data.DetailsDay, (item, k0, i0) => {
-      return {
-        a: common_vendor.t(item.data),
-        b: common_vendor.t(item.week),
-        c: common_vendor.t(item.name),
-        d: common_vendor.t(item.money),
-        e: item,
-        f: common_vendor.o(($event) => $options.Disbursement(item), item)
-      };
-    }),
-    h: common_assets._imports_1$2,
-    i: common_assets._imports_0$3
+    f: common_assets._imports_0$2
   });
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-88930688"]]);

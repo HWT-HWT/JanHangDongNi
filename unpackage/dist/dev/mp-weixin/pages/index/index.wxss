@@ -45,47 +45,46 @@
   height: 40%;
   display: flex;
   align-items: center;
-  font-size: 24rpx;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning.data-v-1cf27b2a {
-  width: 15%;
-  height: 100%;
+  width: 20%;
   display: flex;
-  margin: 0 2%;
+  align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .images.data-v-1cf27b2a {
-  flex: 1;
-  height: 100%;
-  text-align: center;
-  line-height: 45px;
+  align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .images image.data-v-1cf27b2a {
-  width: 90%;
-  height: 80%;
-  color: white;
+  width: 65rpx;
+  height: 55rpx;
 }
 .Home .navbar-title .navigationBar .navigationBar-positioning .text.data-v-1cf27b2a {
-  width: 50%;
+  flex: 1;
   height: 100%;
-  line-height: 30px;
   color: white;
 }
 .Home .navbar-title .navigationBar .navigationBar-search.data-v-1cf27b2a {
   flex: 1;
-  opacity: 0.3;
+  opacity: 0.2;
   justify-items: center;
+  align-self: center;
+}
+.Home .navbar-title .navigationBar .navigationBar-search uni-search-bar.data-v-1cf27b2a {
+  display: flex;
   align-items: center;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc.data-v-1cf27b2a {
   display: flex;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc .ioc_.data-v-1cf27b2a {
-  width: 30px;
-  height: 30px;
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
 }
 .Home .navbar-title .navigationBar .navigationBar-ioc .ioc_ image.data-v-1cf27b2a {
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
 }
 .Home .Maxbanner.data-v-1cf27b2a {
   width: 100%;
@@ -123,7 +122,7 @@
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
-  font-size: 21rpx;
+  font-size: 20rpx;
   font-family: "粗体";
   margin-top: 15%;
 }
@@ -137,11 +136,14 @@
   height: 82%;
 }
 .Home .broadcast.data-v-1cf27b2a {
-  width: 100%;
+  width: 95%;
   height: 40px;
   background-color: #e2edf9;
+  margin: 0 auto;
   margin-top: 5%;
   position: relative;
+  border-radius: 10rpx;
+  overflow: hidden;
 }
 .Home .broadcast .iocn.data-v-1cf27b2a {
   aspect-ratio: 1/1;
@@ -164,12 +166,12 @@
   z-index: 998;
   top: 0;
   right: 0;
-  border-radius: 12px 0 0 0;
+  border-radius: 20rpx 0 0 0;
 }
 .Home .broadcast .Text .text.data-v-1cf27b2a {
   width: 85%;
   height: 100%;
-  font-size: 14px;
+  font-size: 25rpx;
   margin-left: 5%;
   line-height: 2.5rem;
 }
@@ -179,7 +181,7 @@
   aspect-ratio: 1/1;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAVCAYAAABYHP4bAAADjklEQVRIx5WWT2gcVRzHv783/3abNEbRg2LdP2w96EEQFPrnkENx3V2U6CE3JYpUtFYItcnutOIqze6aKPXgQSzkIh4kYkSanbUiWLEVFRRKLcG4uxNzUFHBaGzM7rz38zCZVWFnkr7bzPy+fN73vd/7zgMAFGz38bztvoUdjmx59YZcqf0UrmFQ1nYLljl4VnobYCUv1CvJg1GCkXI7Fu/QSQJ7UNgcaH41Mz8/JrcDCcH8hPT+BisJEB3I2+43YKYwgblBdxODfTWs9cw9J0ae/nZwW0cAkLfdGaGZx5XsBK9+rVcSN4UuXfH7jC70RxmsAICZDMvi2ffLqd8jQQCQK7ae163Bl2T3KgCAgXUDKvNBJf1zP2GhuJJmjR8Ds/RhbDDTmUYt5UaCfGetMd0cesfrrAefWYe8OQx2aKp5naVpxwJnYFhC0+fOntqzHAkCgMLJlUNCi38UOBOaCel1DzrVxIV+sNwLy0Pc0Z4VRHqwjYpEvTGd+CwSBADZqeU7rfj1lwNnJDRITz7cqCUX+u8AU67YtkmQ4RtjHQqfOrX0uUhQMFPq6mtBCQkNitWTznTizTBNwV45qljdSAQmkFBMl5xq4t1IEAAcmFzaPaTFlohwCwAQCSjFrznVxESYJm+3xxmcJpBiAkHSilNLztF2/T9SbscGPGODlbflTIeUG/sb1b2fh8JK7SIIMX9RQcqjL0UU5L7ZnwZ2deivHoQElNc5GgmxW0cYiAcQSFz58OXkohY+q+btWkf8CFbUc6K88UYtfSZUU2wdB9Ewkd8QAuKLejW1AAB6P8H9JXefZu66+G+LG5BeZ6RRTZ3vV79vYjU+HJMTIDaDwwvQucVq8nxo1+VK7VEjNrTgbf65VUHgDmWc2dua/SAPTv6yu2usP9fLP4ZFXfn24iuZy/+t+9/S5ewfjhnWwFwvGZg3YfIep5Jc7eu82E5C6z7jJ5bvRLGac2YyS+FZZ7unNM084QcrwMxrTjU1HHpmit+lIczxIH4UYHbZePXj6q2/hWZdznbfE0J/iJUHEAHMS/XpxB0g4r7JMdm6V9PEAyA/UKHAbHmnnRf3/hGa3jnbXRAkRpmV374sLzmV1F2hLT/l7td0zvb2RIGvxpLTn5TJizoqOoPfELo1qmQXrLx5p5IaixJ04vx1vIvs1uNavZY6veP/eWGqWciXWq/vtP7wYTbypdYj13Jn+AfLXJg5du8+kAAAAABJRU5ErkJggg==") no-repeat;
   background-position: center;
-  background-size: 15px;
+  background-size: 30rpx;
 }
 .Home .min_banner.data-v-1cf27b2a {
   width: 100%;
@@ -188,8 +190,8 @@
 }
 .Home .min_banner image.data-v-1cf27b2a {
   width: 95%;
-  margin: 0 10px;
+  margin: 0 20rpx;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20rpx;
   aspect-ratio: 1/3;
 }

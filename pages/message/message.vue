@@ -7,7 +7,7 @@
 				<text>统一社会信用代码</text>
 			</view>
 			<view class="num">
-				<text>91440101MA5D2RL06E</text>
+				<text>91440101MA59PJFB89</text>
 			</view>
 		</view>
 		<view class="text">
@@ -15,19 +15,19 @@
 				<text>企业法定代表人</text>
 			</view>
 			<view class="num">
-				<text>刘华平</text>
+				<text>朱岳鹏</text>
 			</view>
 		</view>
 		<view class="text">
 			<view class="name">
-				<text>统一社会信用代码</text>
+				<text>法定代表人身份证</text>
 			</view>
 			<view class="num">
-				<text>1424***151X</text>
+				<text>4401***0613</text>
 			</view>
 		</view>
 		
-		<button type="default" style="border-radius:20px; width: 90%; background: #4a79e0; color: white; position: relative; top: 600rpx; ">删除企业</button>
+		<button type="default" style="">删除企业</button>
 	</view>
 </template>
 
@@ -78,6 +78,19 @@
 				height: 100%;
 				color: #707070;
 			}
+		}
+		button{
+			border-radius:20px; 
+			height: 75rpx;
+			width:90%;
+			background: #4a79e0;
+			color: white;
+			position: relative;
+			top: 800rpx;
+			display: flex; 
+			align-items: center;
+			justify-content: center;
+			font-size:35rpx;
 		}
 	}
 </style>

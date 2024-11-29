@@ -136,7 +136,7 @@
 }
 .Inquire .LoanMoeny.data-v-88930688 {
   width: 95%;
-  height: 120px;
+  height: 150px;
   background: white;
   border-radius: 10px;
   margin: 10px auto;

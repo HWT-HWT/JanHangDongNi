@@ -27,7 +27,7 @@
   width: 90%;
   height: 60px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 20rpx;
   display: flex;
   background-color: #ffffff;
   border-radius: 10px;
@@ -51,7 +51,6 @@
 }
 .list .point.data-v-5e0d8f88 {
   width: 10%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

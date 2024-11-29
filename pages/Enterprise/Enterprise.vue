@@ -5,7 +5,7 @@
 		<view class="list">
 			<view class="name">
 				<view class="text">
-					广州友福贸易有限公司
+					广州市智成毅创商务有限公司
 				</view>
 				<view class="ioc" @click="change()">
 					<image src="../../static/myiocn/icon_more_nebu_xyoersonal_rymain.png" mode=""></image>

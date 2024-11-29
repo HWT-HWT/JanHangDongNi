@@ -7,9 +7,6 @@ const _sfc_main = {
   },
   props: {
     list: [Array, Object]
-  },
-  beforeMount() {
-    console.log(this.$props.list);
   }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {

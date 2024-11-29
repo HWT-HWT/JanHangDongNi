@@ -53,3 +53,16 @@
   height: 100%;
   color: #707070;
 }
+.message button.data-v-4c1b26cf {
+  border-radius: 20px;
+  height: 75rpx;
+  width: 90%;
+  background: #4a79e0;
+  color: white;
+  position: relative;
+  top: 800rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35rpx;
+}

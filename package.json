@@ -1,0 +1,11 @@
+{
+    "id": "lsd-steps",
+    "name": "基于 uView 的 Steps 步骤条，带change事件",
+    "version": "0.0.2",
+    "description": "找了半天找不到能够点击的步骤条，没办法基于uView的步骤条组件自己改了个，发布上来给大家使用",
+    "keywords": [
+        "uview",
+        "steps",
+        "change"
+    ]
+}

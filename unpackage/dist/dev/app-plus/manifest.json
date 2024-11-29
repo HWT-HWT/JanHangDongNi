@@ -154,8 +154,8 @@
         {
           "text": "我的",
           "pagePath": "pages/my/my",
-          "selectedIconPath": "/static/ioc/NavBar/loan_avtive.png",
-          "iconPath": "/static/ioc/NavBar/loan.png"
+          "selectedIconPath": "/static/ioc/NavBar/mine_sel.png",
+          "iconPath": "/static/ioc/NavBar/mine_nor.png"
         }
       ],
       "selectedIndex": 0,

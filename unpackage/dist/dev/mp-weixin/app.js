@@ -9,6 +9,7 @@ if (!Math) {
   "./pages/MyAccount/MyAccount.js";
   "./pages/Disbursement/Disbursement.js";
   "./pages/Enterprise/Enterprise.js";
+  "./pages/login/login.js";
 }
 const _sfc_main = {
   onLaunch: function() {

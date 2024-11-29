@@ -30,9 +30,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       ["bg-color"]: "#4b7ae6",
       unit: "12rpx"
     }),
-    b: common_assets._imports_0$4,
-    c: common_assets._imports_1$3,
-    d: common_assets._imports_0$3
+    b: common_assets._imports_0$3,
+    c: common_assets._imports_1$2,
+    d: common_assets._imports_0$4
   };
 }
 const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-13a3a337"]]);

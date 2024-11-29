@@ -147,14 +147,14 @@
         {
           "text": "首页",
           "pagePath": "pages/index/index",
-          "iconPath": "/./static/ioc/NavBar/home_nor.png",
-          "selectedIconPath": "/./static/ioc/NavBar/icon_main_app.png"
+          "selectedIconPath": "/static/ioc/NavBar/icon_main_app.png",
+          "iconPath": "/static/ioc/NavBar/home_nor.png"
         },
         {
           "text": "我的",
           "pagePath": "pages/my/my",
-          "iconPath": "/./static/ioc/NavBar/loan.png",
-          "selectedIconPath": "/./static/ioc/NavBar/loan_avtive.png"
+          "selectedIconPath": "/static/ioc/NavBar/mine_sel.png",
+          "iconPath": "/static/ioc/NavBar/mine_nor.png"
         }
       ],
       "selectedIndex": 0,

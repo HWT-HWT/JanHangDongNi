@@ -14,6 +14,7 @@
 </template>
 
 <script>
+	import {gologin} from '@/components/login.js'
 	export default {
 		name:"My",
 		data() {
@@ -28,9 +29,11 @@
 		},
 		methods:{
 			change(id){
-					id === 1 ? uni.navigateTo({url:'/pages/Enterprise/Enterprise'}) : '';
-					id === 2 ? this.$emit('open') : '';
-					id === 3 ? uni.navigateTo({url:'/pages/loan/loan'}) : '';
+					id === 1 ? gologin('/pages/Enterprise/Enterprise') :''
+					if(uni.getStorageSync('account')){
+						id === 2 ? this.$emit('open') : '';
+					}
+					id === 3 ? gologin('/pages/loan/loan') :''
 			},
 			
 		},
@@ -43,7 +46,7 @@
 		height: 60px;
 		// border: 1px solid;
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 20rpx;
 		display: flex;
 		background-color: #ffffff;
 		border-radius: 10px;
@@ -69,8 +72,6 @@
 		}
 		.point{
 			width: 10%;
-			height: 100%;
-			// border: 1px solid;
 			display: flex;
 			align-items: center;
 			justify-content: center;
